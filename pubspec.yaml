@@ -1,6 +1,7 @@
 name: fstore
+# Programming & Design © Marsilia — https://mrslia.com
 publish_to: "none"
-description: Mobile commerce app by Flutter
+description: Katina.ly mobile app — Programming & Design by Marsilia (mrslia.com)
 
 # Release version: v5.5.0 - Flutter 3.35.3 (Do not change this line)
 # A version number is three numbers separated by dots, like 1.2.43 - followed by an optional build number separated by a +.

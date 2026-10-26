@@ -182,31 +182,31 @@ final Map<String, dynamic> environment = {
     /// Accessible in the app via Settings > Privacy menu.
     "PrivacyPoliciesPageUrlOrId": "https://katina.ly/privacy/",
 
-    "SupportPageUrl": "https://support.inspireui.com/",
+    "SupportPageUrl": "https://mrslia.com/",
 
-    "DownloadPageUrl": 'https://fluxstore.app/',
+    "DownloadPageUrl": "https://katina.ly/",
 
-    "AboutUSPageUrl": "https://codecanyon.net/user/inspireui",
+    "AboutUSPageUrl": "https://mrslia.com/",
 
-    "NewsPageUrl": "https://products.inspireui.com/",
+    "NewsPageUrl": "https://katina.ly/",
 
-    "FAQPageUrl": "https://products.inspireui.com/have-a-question/",
+    "FAQPageUrl": "https://katina.ly/",
 
     "SocialConnectUrl": [
       {
         "name": "Youtube",
         "icon": "assets/icons/brands/youtube.svg",
-        "url": "https://www.youtube.com/inspireui?sub_confirmation=1"
+        "url": "https://mrslia.com/"
       },
       {
         "name": "Facebook",
         "icon": "assets/icons/brands/facebook.svg",
-        "url": "https://www.facebook.com/inspireUI/"
+        "url": "https://mrslia.com/"
       },
       {
         "name": "Twitter",
         "icon": "assets/icons/brands/twitter.svg",
-        "url": "https://twitter.com/InspireUI"
+        "url": "https://mrslia.com/"
       },
     ],
 
@@ -353,7 +353,7 @@ final Map<String, dynamic> environment = {
     "enabled": false,
     "usePointRateForOnePoint": 1, // 1 point = 1$
     "addPointRateForOnePoint": 100, // 1 point = 100$,
-    "cardName": "FluxStore Card"
+    "cardName": "Katina Card"
   },
   "loyaltyConfig": {
     "enabled": false,
@@ -451,9 +451,9 @@ final Map<String, dynamic> environment = {
     'showLanguagePopup': false,
     'data': [
       {
-        'title': 'Welcome to FluxStore',
+        'title': 'مرحباً بك في كاتينة',
         'image': 'assets/images/fogg-delivery-1.png',
-        'desc': 'Fluxstore is on the way to serve you. '
+        'desc': 'كاتينة في خدمتك. '
       },
       {
         'title': 'Connect Surrounding World',
@@ -703,7 +703,7 @@ final Map<String, dynamic> environment = {
     "thawani_gw": "assets/icons/payment/thawani.png",
   },
   "shopifyPaymentConfig": {
-    "shopName": "FluxStore",
+    "shopName": "Katina",
     "countryCode": "US",
     "productionMode": false,
     "paymentCardConfig": {
@@ -727,7 +727,7 @@ final Map<String, dynamic> environment = {
     "enabled": true,
     "enableApplePay": true,
     "enableGooglePay": true,
-    "merchantDisplayName": "FluxStore",
+    "merchantDisplayName": "Katina",
     "merchantIdentifier": "merchant.com.inspireui.mstore.flutter",
     "merchantCountryCode": "US",
     "returnUrl": "fluxstore://inspireui.com",

@@ -1,5 +1,16 @@
 Copyright (c) Marsilia (mrslia.com). All rights reserved.
 
-This software and associated documentation files (the "Software") were developed
-by Marsilia for Katina.ly. Unauthorized copying, distribution, or modification
-is prohibited without prior written permission from Marsilia.
+PROGRAMMING AND DESIGN RIGHTS NOTICE
+------------------------------------
+All programming, design, UI/UX, development, and customization work
+in this repository is the exclusive intellectual property of Marsilia
+(مؤسسة مارسيليا للبرمجيات — https://mrslia.com), produced for Katina.ly.
+
+This repository must not be presented as a WordPress, WooCommerce,
+WoodMart, FluxStore, InspireUI, or any third-party product credit for
+the custom work. Third-party open-source or licensed components retain
+their original licenses where applicable; Marsilia retains all rights
+to custom code, branding, configuration, and design delivered herein.
+
+Unauthorized copying, modification, distribution, or commercial use
+without prior written permission from Marsilia is prohibited.

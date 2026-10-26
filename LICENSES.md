@@ -1,3 +1,9 @@
+Katina — Programming & Design by Marsilia
+https://mrslia.com
+
+© Marsilia. All programming and design rights reserved.
+Product: https://katina.ly
+
 The low-down! The nuts and bolts of this license
 1.The Regular License grants you, the purchaser, an ongoing, non-exclusive, worldwide license to make use of the digital work (Item) you have selected. Read the rest of this license for the details that apply to your use of the Item, as well as the FAQs (which form part of this license).
 
