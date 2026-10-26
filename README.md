@@ -1,16 +1,15 @@
-# Katina.ly Mobile App
+# كاتينة — تطبيق الجوال
 
-تطبيق **كاتينة** للجوال (Android / iOS).
+مرحباً، هذا مستودع تطبيق **كاتينة** لأنظمة أندرويد وiOS.
 
-## الحقوق / Credits
-**البرمجة والتصميم بالكامل:** [مؤسسة مارسيليا للبرمجيات](https://mrslia.com)  
-**Programming & Design (full):** [Marsilia](https://mrslia.com)
+التطبيق يسهّل التصفح والشراء ومتابعة الطلبات، بنفس روح المنصة على الموقع.
 
-© Marsilia — https://mrslia.com · Product: https://katina.ly
+## من نفّذ المشروع؟
+البرمجة والتصميم بالكامل من تنفيذ **مؤسسة مارسيليا للبرمجيات**.
+زوروا موقعنا: [mrslia.com](https://mrslia.com)
 
-راجع أيضاً: [COPYRIGHT.md](./COPYRIGHT.md) · [LICENSE](./LICENSE) · [NOTICE](./NOTICE)
+## Who built this?
+Programming and design were done entirely by **Marsilia**.
+Visit us at [mrslia.com](https://mrslia.com)
 
-## عن المشروع
-تطبيق موبايل مخصّص لمنصة كاتينة، يشمل الهوية البصرية، تجربة المستخدم، والتكامل مع المتجر.
-
-> حقوق البرمجة والتصميم لهذا التطبيق منسوبة لمارسيليا فقط، وليس لـ FluxStore أو InspireUI أو أي منتج طرف ثالث.
+© مؤسسة مارسيليا للبرمجيات · https://mrslia.com

@@ -1,3 +1,10 @@
+# تنويه
+
+البرمجة والتصميم لهذا التطبيق من تنفيذ مؤسسة مارسيليا للبرمجيات.
+https://mrslia.com
+
+---
+
 Katina — Programming & Design by Marsilia
 https://mrslia.com
 

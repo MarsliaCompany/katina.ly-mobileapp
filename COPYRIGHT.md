@@ -1,20 +1,15 @@
-# حقوق البرمجة والتصميم / Copyright — Programming & Design
+# حقوق البرمجة والتصميم
 
-© Marsilia (Marslia) — https://mrslia.com
+© مؤسسة مارسيليا للبرمجيات — https://mrslia.com
 
 ## العربية
-جميع حقوق **البرمجة** و**التصميم** و**التطوير** و**التخصيص** لهذا المشروع محفوظة بالكامل لصالح **مؤسسة مارسيليا للبرمجيات** (mrslia.com).
-
-تم تنفيذ المنصة والتطبيق لصالح **كاتينة (katina.ly)** بواسطة مارسيليا.
-يُمنع نسخ أو إعادة توزيع أو إعادة بيع أو نسب العمل لطرف آخر دون إذن كتابي مسبق من مارسيليا.
+حقوق البرمجة والتصميم لهذا المشروع محفوظة بالكامل لمؤسسة مارسيليا للبرمجيات.
+تم تنفيذ العمل لصالح منصة كاتينة.
+لا يجوز نسخ المشروع أو إعادة بيعه أو نسبه لجهة أخرى دون موافقة مكتوبة من مارسيليا.
 
 ## English
-**All programming, design, development, and customization rights** for this project are reserved exclusively for **Marsilia** (https://mrslia.com).
+All programming and design rights for this project belong to Marsilia.
+The work was delivered for the Katina platform.
+Copying, reselling, or attributing this work to another party is not allowed without written permission from Marsilia.
 
-Built for **Katina (katina.ly)** by Marsilia.
-Unauthorized copying, redistribution, resale, or attribution to any third party is prohibited without prior written permission from Marsilia.
-
-## Brand
-- Company: Marsilia / مؤسسة مارسيليا للبرمجيات  
-- Website: https://mrslia.com  
-- Product: Katina — https://katina.ly  
+https://mrslia.com
