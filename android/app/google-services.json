@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "365792443426",
+    "project_id": "katina-a7506",
+    "storage_bucket": "katina-a7506.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:365792443426:android:1c529e7982307910285e7b",
+        "android_client_info": {
+          "package_name": "com.katina.mrslia"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPWPS29oEVosVGW0Y2-7cIBHj8Xqig2t8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

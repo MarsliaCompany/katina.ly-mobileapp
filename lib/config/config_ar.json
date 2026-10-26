@@ -1,0 +1,647 @@
+{
+  "SplashScreen": {
+    "enable": true,
+    "type": "simple",
+    "image": "assets/images/splash_katina.png",
+    "duration": 3000,
+    "backgroundColor": "#D4A574",
+    "animationName": "Katina",
+    "boxFit": "cover",
+    "paddingTop": 0.0,
+    "paddingBottom": 0.0,
+    "paddingLeft": 0.0,
+    "paddingRight": 0.0
+  },
+  "HorizonLayout": [
+    {
+      "key": "header_logo",
+      "layout": "logo",
+      "showMenu": true,
+      "showSearch": true,
+      "showLogo": true,
+      "enableBackground": true,
+      "menuIcon": {
+        "name": "bars",
+        "fontFamily": "CupertinoIcons",
+        "color": "#071018"
+      },
+      "iconColor": "#071018",
+      "iconBackground": "#FCC376",
+      "iconOpacity": 1.0,
+      "iconRadius": 12.0,
+      "iconSize": 26.0,
+      "iconSpreadRadius": 8.0,
+      "searchIcon": {
+        "name": "search",
+        "fontFamily": "CupertinoIcons",
+        "color": "#071018"
+      }
+    },
+    {
+      "key": "banner_slider",
+      "layout": "bannerImage",
+      "isSlider": true,
+      "autoPlay": true,
+      "showNumber": false,
+      "design": "default",
+      "showBackGround": true,
+      "radius": 12.0,
+      "enableBackground": true,
+      "items": [
+        {
+          "category": null,
+          "image": "assets/images/1.png",
+          "padding": 15.0
+        },
+        {
+          "category": 21,
+          "image": "assets/images/2.png",
+          "padding": 15.0
+        },
+        {
+          "product": 15,
+          "image": "assets/images/3.png",
+          "padding": 15.0
+        },
+        {
+          "url": "parts-request-form",
+          "image": "assets/images/uae.png",
+          "padding": 15.0
+        }
+      ],
+      "itemsWeb": [
+        {
+          "category": 18,
+          "image": "https://cln.sh/41hyDrzG+",
+          "padding": 15.0
+        },
+        {
+          "category": 21,
+          "image": "https://cln.sh/5nl2ZsKG+",
+          "padding": 15.0
+        },
+        {
+          "product": 15,
+          "image": "https://cln.sh/q24Xpr1c+",
+          "padding": 15.0
+        },
+        {
+          "url": "parts-request-form",
+          "image": "https://cln.sh/rIsIM1rt+",
+          "padding": 15.0
+        }
+      ],
+      "marginLeft": 16.0,
+      "marginRight": 16.0,
+      "isRadius": true
+    },
+    {
+      "key": "auto_parts_grid",
+      "layout": "category",
+      "type": "grid",
+      "useFor": "both",
+      "title": "كاتينة قطع غيار السيارات",
+      "wrap": true,
+      "size": 1.2,
+      "radius": 20.0,
+      "enableBackground": false,
+      "columns": 2,
+      "backgroundColor": "#f9c374",
+      "showText": true,
+      "showCount": false,
+      "noBackground": false,
+      "items": [
+        {
+          "category": 268,
+          "image": "https://katina.ly/wp-content/uploads/2025/10/2.png",
+          "colors": [
+            "#FBD38D",
+            "#FBD38D"
+          ],
+          "originalColor": true,
+          "label": "صالة"
+        },
+        {
+          "category": 492,
+          "label": "محرك",
+          "image": "https://katina.ly/wp-content/uploads/2025/10/1.png",
+          "colors": [
+            "#FBD38D",
+            "#FBD38D"
+          ],
+          "originalColor": true
+        },
+        {
+          "category": 266,
+          "label": "مغير سرعات",
+          "image": "https://katina.ly/wp-content/uploads/2025/10/4.png",
+          "colors": [
+            "#FBD38D",
+            "#FBD38D"
+          ],
+          "originalColor": true
+        },
+        {
+          "category": 267,
+          "label": "هيكل",
+          "image": "https://katina.ly/wp-content/uploads/2025/10/3.png",
+          "colors": [
+            "#FBD38D",
+            "#FBD38D"
+          ],
+          "originalColor": true
+        },
+        {
+          "category": 272,
+          "label": "روابش",
+          "image": "https://katina.ly/wp-content/uploads/2025/10/5.png",
+          "colors": [
+            "#FBD38D",
+            "#FBD38D"
+          ],
+          "originalColor": true
+        },
+        {
+          "category": 269,
+          "label": "زيوت",
+          "image": "https://katina.ly/wp-content/uploads/2025/10/6.png",
+          "colors": [
+            "#FBD38D",
+            "#FBD38D"
+          ],
+          "originalColor": true
+        },
+        {
+          "category": 270,
+          "label": "البطاريات",
+          "image": "https://katina.ly/wp-content/uploads/2025/10/7.png",
+          "colors": [
+            "#FBD38D",
+            "#FBD38D"
+          ],
+          "originalColor": true
+        },
+        {
+          "category": 271,
+          "label": "مواد معالجة",
+          "image": "https://katina.ly/wp-content/uploads/2025/10/تصميم-بدون-عنوان.png",
+          "colors": [
+            "#FBD38D",
+            "#FBD38D"
+          ],
+          "originalColor": true
+        }
+      ],
+      "line": false,
+      "marginLeft": 16.0,
+      "marginRight": 16.0,
+      "marginTop": 5.0,
+      "marginBottom": 5.0,
+      "paddingX": 16.0,
+      "paddingY": 16.0,
+      "marginX": 6.0,
+      "marginY": 6.0,
+      "hideTitle": false,
+      "imageBorderWidth": 0.0,
+      "imageBorderColor": "00000000",
+      "imageBorderStyle": "solid",
+      "imageSpacing": 10.0,
+      "border": 0.0,
+      "enableBorder": false,
+      "textAlignment": "center",
+      "imageBoxFit": "contain",
+      "elevation": 2.0,
+      "cardDesign": "card",
+      "backgroundRadius": 20.0,
+      "hMargin": 16.0
+    },
+    {
+      "key": "category_268_products",
+      "name": "صالة",
+      "layout": "carousel",
+      "category": 268,
+      "limit": 10,
+      "showSeeAll": true,
+      "backgroundColor": "#f9c374",
+      "enableBackground": false,
+      "borderRadius": 12.0,
+      "rows": 1,
+      "columns": 0,
+      "hMargin": 16.0,
+      "vMargin": 10.0,
+      "hPadding": 8.0,
+      "vPadding": 6.0,
+      "cardDesign": "card",
+      "hideTitle": false,
+      "hidePrice": false,
+      "showHeart": true,
+      "imageRatio": 0.8,
+      "spaceWidth": 2.0,
+      "isSnapping": false,
+      "marginLeft": 16.0,
+      "marginRight": 16.0
+    },
+    {
+      "key": "category_492_products",
+      "name": "محرك",
+      "layout": "carousel",
+      "category": 492,
+      "limit": 10,
+      "showSeeAll": true,
+      "backgroundColor": "#f9c374",
+      "enableBackground": false,
+      "borderRadius": 12.0,
+      "rows": 1,
+      "columns": 0,
+      "hMargin": 16.0,
+      "vMargin": 10.0,
+      "hPadding": 8.0,
+      "vPadding": 6.0,
+      "cardDesign": "card",
+      "hideTitle": false,
+      "hidePrice": false,
+      "showHeart": true,
+      "imageRatio": 0.8,
+      "spaceWidth": 2.0,
+      "isSnapping": false,
+      "marginLeft": 16.0,
+      "marginRight": 16.0
+    },
+    {
+      "key": "category_266_products",
+      "name": "مغير سرعات",
+      "layout": "carousel",
+      "category": 266,
+      "limit": 10,
+      "showSeeAll": true,
+      "backgroundColor": "#f9c374",
+      "enableBackground": false,
+      "borderRadius": 12.0,
+      "rows": 1,
+      "columns": 0,
+      "hMargin": 16.0,
+      "vMargin": 10.0,
+      "hPadding": 8.0,
+      "vPadding": 6.0,
+      "cardDesign": "card",
+      "hideTitle": false,
+      "hidePrice": false,
+      "showHeart": true,
+      "imageRatio": 0.8,
+      "spaceWidth": 2.0,
+      "isSnapping": false,
+      "marginLeft": 16.0,
+      "marginRight": 16.0
+    },
+    {
+      "key": "category_267_products",
+      "name": "هيكل",
+      "layout": "carousel",
+      "category": 267,
+      "limit": 10,
+      "showSeeAll": true,
+      "backgroundColor": "#f9c374",
+      "enableBackground": false,
+      "borderRadius": 12.0,
+      "rows": 1,
+      "columns": 0,
+      "hMargin": 16.0,
+      "vMargin": 10.0,
+      "hPadding": 8.0,
+      "vPadding": 6.0,
+      "cardDesign": "card",
+      "hideTitle": false,
+      "hidePrice": false,
+      "showHeart": true,
+      "imageRatio": 0.8,
+      "spaceWidth": 2.0,
+      "isSnapping": false,
+      "marginLeft": 16.0,
+      "marginRight": 16.0
+    },
+    {
+      "key": "category_272_products",
+      "name": "روابش",
+      "layout": "carousel",
+      "category": 272,
+      "limit": 10,
+      "showSeeAll": true,
+      "backgroundColor": "#f9c374",
+      "enableBackground": false,
+      "borderRadius": 12.0,
+      "rows": 1,
+      "columns": 0,
+      "hMargin": 16.0,
+      "vMargin": 10.0,
+      "hPadding": 8.0,
+      "vPadding": 6.0,
+      "cardDesign": "card",
+      "hideTitle": false,
+      "hidePrice": false,
+      "showHeart": true,
+      "imageRatio": 0.8,
+      "spaceWidth": 2.0,
+      "isSnapping": false,
+      "marginLeft": 16.0,
+      "marginRight": 16.0
+    },
+    {
+      "key": "category_269_products",
+      "name": "زيوت",
+      "layout": "carousel",
+      "category": 269,
+      "limit": 10,
+      "showSeeAll": true,
+      "backgroundColor": "#f9c374",
+      "enableBackground": false,
+      "borderRadius": 12.0,
+      "rows": 1,
+      "columns": 0,
+      "hMargin": 16.0,
+      "vMargin": 10.0,
+      "hPadding": 8.0,
+      "vPadding": 6.0,
+      "cardDesign": "card",
+      "hideTitle": false,
+      "hidePrice": false,
+      "showHeart": true,
+      "imageRatio": 0.8,
+      "spaceWidth": 2.0,
+      "isSnapping": false,
+      "marginLeft": 16.0,
+      "marginRight": 16.0
+    },
+    {
+      "key": "category_270_products",
+      "name": "البطاريات",
+      "layout": "carousel",
+      "category": 270,
+      "limit": 10,
+      "showSeeAll": true,
+      "backgroundColor": "#f9c374",
+      "enableBackground": false,
+      "borderRadius": 12.0,
+      "rows": 1,
+      "columns": 0,
+      "hMargin": 16.0,
+      "vMargin": 10.0,
+      "hPadding": 8.0,
+      "vPadding": 6.0,
+      "cardDesign": "card",
+      "hideTitle": false,
+      "hidePrice": false,
+      "showHeart": true,
+      "imageRatio": 0.8,
+      "spaceWidth": 2.0,
+      "isSnapping": false,
+      "marginLeft": 16.0,
+      "marginRight": 16.0
+    },
+    {
+      "key": "category_271_products",
+      "name": "مواد معالجة",
+      "layout": "carousel",
+      "category": 271,
+      "limit": 10,
+      "showSeeAll": true,
+      "backgroundColor": "#f9c374",
+      "enableBackground": false,
+      "borderRadius": 12.0,
+      "rows": 1,
+      "columns": 0,
+      "hMargin": 16.0,
+      "vMargin": 10.0,
+      "hPadding": 8.0,
+      "vPadding": 6.0,
+      "cardDesign": "card",
+      "hideTitle": false,
+      "hidePrice": false,
+      "showHeart": true,
+      "imageRatio": 0.8,
+      "spaceWidth": 2.0,
+      "isSnapping": false,
+      "marginLeft": 16.0,
+      "marginRight": 16.0
+    },
+    {
+      "key": "recent_view",
+      "name": "المشاهدات الأخيرة",
+      "layout": "recentView",
+      "borderRadius": 12.0,
+      "marginLeft": 16.0,
+      "marginRight": 16.0,
+      "hMargin": 16.0
+    },
+    {
+      "key": "our_blog_posts",
+      "name": "معلومات عامة",
+      "layout": "blog",
+      "borderRadius": 12.0,
+      "marginLeft": 16.0,
+      "marginRight": 16.0,
+      "hMargin": 16.0
+    }
+  ],
+  "Setting": {
+    "MainColor": "#f9c374",
+    "FontFamily": "tajawal",
+    "FontHeader": "tajawal",
+    "ProductListLayout": "list",
+    "StickyHeader": false,
+    "ShowChat": true,
+    "useMaterial3": true,
+    "AgeRestriction": {
+      "enable": false,
+      "imageUrl": "",
+      "backgroundImageUrl": "",
+      "title": "مرحباً بك في متجرنا\nيجب أن تكون 21 سنة أو أكبر للدخول",
+      "deniedMessage": "أنت غير مؤهل للدخول إلى هذا التطبيق",
+      "hintMessage": "ما هي سنة ميلادك؟",
+      "minimumAge": 21,
+      "useLogo": true,
+      "alwaysShowUponOpen": true
+    },
+    "AboutUS": "https://katina.ly/about-us/",
+    "Privacy": "https://katina.ly/privacy-policy/",
+    "DownloadApp": "#",
+    "SmartEngagementBanner": {
+      "popup": {
+        "enable": false,
+        "data": {
+          "layout": "bannerImage",
+          "design": "static",
+          "fit": "fitHeight",
+          "marginLeft": null,
+          "items": [
+            {
+              "image": "https://i.imgur.com/ZL1LO75.png",
+              "showSubcategory": false,
+              "bannerWithProduct": false,
+              "defaultShowProduct": false,
+              "products": [],
+              "category": "17",
+              "padding": 0.0
+            }
+          ],
+          "marginBottom": 10.0,
+          "height": 0.45,
+          "marginRight": null,
+          "marginTop": 10.0,
+          "enableParallax": false,
+          "parallaxImageRatio": 1.2,
+          "isHorizontal": false,
+          "parallax": false,
+          "key": "p2oq4zc4hg"
+        },
+        "alwaysShowUponOpen": true,
+        "closePosition": "topRight",
+        "updatedTime": 1661314494281
+      },
+      "flexible": {
+        "enable": false,
+        "data": {
+          "alignment": "topCenter",
+          "marginTop": 0.0,
+          "marginBottom": 0.0,
+          "items": [
+            {
+              "image": "https://assets9.lottiefiles.com/private_files/lf30_a4mKwA.json",
+              "width": 100.0,
+              "height": 80.0,
+              "borderRadius": 2.0,
+              "marginLeft": 0.0,
+              "marginRight": 0.0,
+              "textFontSize": 14.0,
+              "useMaxWidth": true,
+              "navigator": {
+                "showSubcategory": false,
+                "coupon": "blackf"
+              }
+            }
+          ],
+          "layout": "button"
+        },
+        "canDrag": true,
+        "canClose": true,
+        "width": 100.0,
+        "height": 100.0
+      },
+      "sticky": {
+        "enable": false,
+        "data": {
+          "layout": "bannerImage",
+          "design": "static",
+          "fit": "fitWidth",
+          "marginLeft": 10.0,
+          "items": [
+            {
+              "image": "https://i.imgur.com/LUaEM3v.jpeg",
+              "showSubcategory": false,
+              "bannerWithProduct": false,
+              "defaultShowProduct": false,
+              "products": [],
+              "coupon": "halfprice",
+              "padding": 0.0,
+              "radius": 9.0
+            }
+          ],
+          "marginBottom": 10.0,
+          "marginRight": 10.0,
+          "marginTop": 10.0,
+          "height": 0.2,
+          "enableParallax": false,
+          "parallaxImageRatio": 1.2,
+          "isHorizontal": false,
+          "parallax": false,
+          "key": "ga8oe39k5t"
+        }
+      }
+    }
+  },
+  "TabBar": [
+    {
+      "layout": "home",
+      "icon": "assets/icons/tabs/icon-home.png"
+    },
+    {
+      "layout": "category",
+      "categoryLayout": "card",
+      "icon": "assets/icons/tabs/icon-category.png"
+    },
+    {
+      "layout": "cart",
+      "icon": "assets/icons/tabs/icon-cart2.png"
+    },
+    {
+      "layout": "profile",
+      "icon": "assets/icons/tabs/icon-user.png",
+      "showChat": true,
+      "showBackground": true,
+      "styleItem": "listTile",
+      "settingStyle": "normal"
+    }
+  ],
+  "searchSuggestion": [
+    "اقتراحات البحث:",
+    "زيت محرك",
+    "فلتر هواء",
+    "بطارية سيارة",
+    "إطارات",
+    "فرامل",
+    "شمعات احتراق",
+    "مساحات زجاج",
+    "مصابيح",
+    "قطع غيار أصلية",
+    "عروض خاصة"
+  ],
+  "PrivacyPoliciesPageUrlOrId": "https://katina.ly./privacy/",
+  "MetaSeo": {
+    "app": {
+      "excludes": [
+        "checkout"
+      ],
+      "config": {
+        "author": "كاتينة لقطع غيار السيارات",
+        "description": "متجر متخصص في قطع غيار السيارات الأصلية والموثوقة - زيت محرك، فلاتر، بطاريات، إطارات وكل ما تحتاجه لسيارتك",
+        "keywords": [
+          "قطع غيار سيارات",
+          "زيت محرك",
+          "فلاتر هواء",
+          "بطاريات سيارات",
+          "إطارات",
+          "فرامل",
+          "صيانة سيارات",
+          "متجر سيارات"
+        ]
+      }
+    },
+    "routes": [
+      {
+        "route": "dashboard",
+        "config": {
+          "author": "متجر قطع غيار السيارات",
+          "description": "متجر متخصص في قطع غيار السيارات الأصلية والموثوقة - زيت محرك، فلاتر، بطاريات، إطارات وكل ما تحتاجه لسيارتك",
+          "keywords": [
+            "قطع غيار سيارات",
+            "زيت محرك",
+            "فلاتر هواء",
+            "بطاريات سيارات",
+            "إطارات",
+            "فرامل",
+            "صيانة سيارات",
+            "متجر سيارات"
+          ]
+        }
+      }
+    ]
+  },
+  "overrideTranslation": {
+    "@@locale": "ar",
+    "copyright": "حقوق النشر © 2024 متجر قطع غيار السيارات. جميع الحقوق محفوظة.",
+    "welcome": "مرحباً بك في متجر قطع غيار السيارات",
+    "featured_products": "المنتجات المميزة",
+    "new_arrivals": "الوصلات الجديدة",
+    "on_sale": "العروض الخاصة",
+    "categories": "الأقسام"
+  }
+}

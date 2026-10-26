@@ -1,0 +1,4123 @@
+{
+  "success": true,
+  "data": [
+    {
+      "id": 0,
+      "name": "",
+      "label": "",
+      "type": "",
+      "order_by": "",
+      "parent_ids": [],
+      "has_multiple_parents": false,
+      "is_root": true,
+      "values": [],
+      "has_values": false,
+      "parent_value_requirements": [],
+      "children": [
+        {
+          "id": 0,
+          "name": "",
+          "label": "",
+          "type": "",
+          "order_by": "",
+          "parent_ids": [
+            "3"
+          ],
+          "has_multiple_parents": false,
+          "is_root": false,
+          "values": [
+            {
+              "id": 353,
+              "name": "fj",
+              "slug": "fj",
+              "description": "",
+              "count": 2
+            },
+            {
+              "id": 354,
+              "name": "افالون",
+              "slug": "%d8%a7%d9%81%d8%a7%d9%84%d9%88%d9%86",
+              "description": "افالون",
+              "count": 2
+            },
+            {
+              "id": 355,
+              "name": "افانزيس",
+              "slug": "%d8%a7%d9%81%d8%a7%d9%86%d8%b2%d9%8a%d8%b3",
+              "description": "",
+              "count": 2
+            },
+            {
+              "id": 356,
+              "name": "اوربان كروزر",
+              "slug": "%d8%a7%d9%88%d8%b1%d8%a8%d8%a7%d9%86-%d9%83%d8%b1%d9%88%d8%b2%d8%b1",
+              "description": "",
+              "count": 1
+            },
+            {
+              "id": 357,
+              "name": "اوريون",
+              "slug": "%d8%a7%d9%88%d8%b1%d9%8a%d9%88%d9%86",
+              "description": "",
+              "count": 1
+            },
+            {
+              "id": 358,
+              "name": "برادو",
+              "slug": "%d8%a8%d8%b1%d8%a7%d8%af%d9%88",
+              "description": "",
+              "count": 1
+            },
+            {
+              "id": 359,
+              "name": "بريفيا",
+              "slug": "%d8%a8%d8%b1%d9%8a%d9%81%d9%8a%d8%a7",
+              "description": "",
+              "count": 1
+            },
+            {
+              "id": 360,
+              "name": "تاكوما",
+              "slug": "%d8%aa%d8%a7%d9%83%d9%88%d9%85%d8%a7",
+              "description": "",
+              "count": 1
+            },
+            {
+              "id": 361,
+              "name": "تندرا",
+              "slug": "%d8%aa%d9%86%d8%af%d8%b1%d8%a7",
+              "description": "",
+              "count": 1
+            },
+            {
+              "id": 362,
+              "name": "راف4",
+              "slug": "%d8%b1%d8%a7%d9%814",
+              "description": "",
+              "count": 1
+            },
+            {
+              "id": 363,
+              "name": "ستارليت",
+              "slug": "%d8%b3%d8%aa%d8%a7%d8%b1%d9%84%d9%8a%d8%aa",
+              "description": "",
+              "count": 1
+            },
+            {
+              "id": 364,
+              "name": "سيكويا",
+              "slug": "%d8%b3%d9%8a%d9%83%d9%88%d9%8a%d8%a7",
+              "description": "",
+              "count": 1
+            },
+            {
+              "id": 365,
+              "name": "سيينا",
+              "slug": "%d8%b3%d9%8a%d9%8a%d9%86%d8%a7",
+              "description": "",
+              "count": 1
+            },
+            {
+              "id": 366,
+              "name": "فور رانر",
+              "slug": "%d9%81%d9%88%d8%b1-%d8%b1%d8%a7%d9%86%d8%b1",
+              "description": "",
+              "count": 1
+            },
+            {
+              "id": 367,
+              "name": "كامري",
+              "slug": "%d9%83%d8%a7%d9%85%d8%b1%d9%8a",
+              "description": "",
+              "count": 1
+            },
+            {
+              "id": 368,
+              "name": "كورولا",
+              "slug": "%d9%83%d9%88%d8%b1%d9%88%d9%84%d8%a7",
+              "description": "كورولا",
+              "count": 2
+            },
+            {
+              "id": 369,
+              "name": "لاند كروز",
+              "slug": "%d9%84%d8%a7%d9%86%d8%af-%d9%83%d8%b1%d9%88%d8%b2",
+              "description": "",
+              "count": 1
+            },
+            {
+              "id": 370,
+              "name": "هايلوكس",
+              "slug": "%d9%87%d8%a7%d9%8a%d9%84%d9%88%d9%83%d8%b3",
+              "description": "",
+              "count": 1
+            },
+            {
+              "id": 371,
+              "name": "يارس",
+              "slug": "%d9%8a%d8%a7%d8%b1%d8%b3",
+              "description": "",
+              "count": 1
+            }
+          ],
+          "has_values": true,
+          "parent_value_requirements": [],
+          "children": [
+            {
+              "id": 0,
+              "name": "",
+              "label": "",
+              "type": "",
+              "order_by": "",
+              "parent_ids": [
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9",
+                "10"
+              ],
+              "has_multiple_parents": true,
+              "is_root": false,
+              "values": [
+                {
+                  "id": 493,
+                  "name": "0.9",
+                  "slug": "0-9",
+                  "description": "",
+                  "count": 3
+                },
+                {
+                  "id": 494,
+                  "name": "1.0",
+                  "slug": "1-0",
+                  "description": "",
+                  "count": 2
+                },
+                {
+                  "id": 495,
+                  "name": "1.2",
+                  "slug": "1-2",
+                  "description": "",
+                  "count": 2
+                },
+                {
+                  "id": 496,
+                  "name": "1.4",
+                  "slug": "1-4",
+                  "description": "",
+                  "count": 2
+                },
+                {
+                  "id": 497,
+                  "name": "1.5",
+                  "slug": "1-5",
+                  "description": "",
+                  "count": 2
+                },
+                {
+                  "id": 498,
+                  "name": "1.6",
+                  "slug": "1-6",
+                  "description": "",
+                  "count": 2
+                },
+                {
+                  "id": 499,
+                  "name": "1.8",
+                  "slug": "1-8",
+                  "description": "",
+                  "count": 2
+                },
+                {
+                  "id": 500,
+                  "name": "2.0",
+                  "slug": "2-0",
+                  "description": "",
+                  "count": 1
+                },
+                {
+                  "id": 501,
+                  "name": "2.4",
+                  "slug": "2-4",
+                  "description": "",
+                  "count": 1
+                },
+                {
+                  "id": 502,
+                  "name": "2.5",
+                  "slug": "2-5",
+                  "description": "",
+                  "count": 1
+                },
+                {
+                  "id": 503,
+                  "name": "3.0",
+                  "slug": "3-0",
+                  "description": "",
+                  "count": 1
+                },
+                {
+                  "id": 504,
+                  "name": "3.5",
+                  "slug": "3-5",
+                  "description": "",
+                  "count": 2
+                },
+                {
+                  "id": 505,
+                  "name": "4.0",
+                  "slug": "4-0",
+                  "description": "",
+                  "count": 2
+                },
+                {
+                  "id": 506,
+                  "name": "5.0",
+                  "slug": "5-0",
+                  "description": "",
+                  "count": 2
+                },
+                {
+                  "id": 507,
+                  "name": "6.0",
+                  "slug": "6-0",
+                  "description": "",
+                  "count": 2
+                },
+                {
+                  "id": 508,
+                  "name": "6.5",
+                  "slug": "6-5",
+                  "description": "",
+                  "count": 2
+                },
+                {
+                  "id": 509,
+                  "name": "8.0",
+                  "slug": "8-0",
+                  "description": "",
+                  "count": 2
+                }
+              ],
+              "has_values": true,
+              "parent_value_requirements": [],
+              "children": [
+                {
+                  "id": 0,
+                  "name": "",
+                  "label": "",
+                  "type": "",
+                  "order_by": "",
+                  "parent_ids": [
+                    "12"
+                  ],
+                  "has_multiple_parents": false,
+                  "is_root": false,
+                  "values": [
+                    {
+                      "id": 436,
+                      "name": "1980",
+                      "slug": "1980",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 437,
+                      "name": "1981",
+                      "slug": "1981",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 438,
+                      "name": "1982",
+                      "slug": "1982",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 439,
+                      "name": "1983",
+                      "slug": "1983",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 440,
+                      "name": "1984",
+                      "slug": "1984",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 441,
+                      "name": "1985",
+                      "slug": "1985",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 442,
+                      "name": "1986",
+                      "slug": "1986",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 443,
+                      "name": "1987",
+                      "slug": "1987",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 444,
+                      "name": "1988",
+                      "slug": "1988",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 445,
+                      "name": "1989",
+                      "slug": "1989",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 446,
+                      "name": "1990",
+                      "slug": "1990",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 447,
+                      "name": "1991",
+                      "slug": "1991",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 448,
+                      "name": "1992",
+                      "slug": "1992",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 449,
+                      "name": "1993",
+                      "slug": "1993",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 450,
+                      "name": "1994",
+                      "slug": "1994",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 451,
+                      "name": "1995",
+                      "slug": "1995",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 452,
+                      "name": "1996",
+                      "slug": "1996",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 453,
+                      "name": "1997",
+                      "slug": "1997",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 454,
+                      "name": "1998",
+                      "slug": "1998",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 455,
+                      "name": "1999",
+                      "slug": "1999",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 456,
+                      "name": "2000",
+                      "slug": "2000",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 457,
+                      "name": "2001",
+                      "slug": "2001",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 458,
+                      "name": "2002",
+                      "slug": "2002",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 459,
+                      "name": "2003",
+                      "slug": "2003",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 460,
+                      "name": "2004",
+                      "slug": "2004",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 461,
+                      "name": "2005",
+                      "slug": "2005",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 462,
+                      "name": "2006",
+                      "slug": "2006",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 463,
+                      "name": "2007",
+                      "slug": "2007",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 464,
+                      "name": "2008",
+                      "slug": "2008",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 465,
+                      "name": "2009",
+                      "slug": "2009",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 466,
+                      "name": "2010",
+                      "slug": "2010",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 467,
+                      "name": "2011",
+                      "slug": "2011",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 468,
+                      "name": "2012",
+                      "slug": "2012",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 469,
+                      "name": "2013",
+                      "slug": "2013",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 470,
+                      "name": "2014",
+                      "slug": "2014",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 471,
+                      "name": "2015",
+                      "slug": "2015",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 472,
+                      "name": "2016",
+                      "slug": "2016",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 473,
+                      "name": "2017",
+                      "slug": "2017",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 474,
+                      "name": "2018",
+                      "slug": "2018",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 475,
+                      "name": "2019",
+                      "slug": "2019",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 476,
+                      "name": "2020",
+                      "slug": "2020",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 477,
+                      "name": "2021",
+                      "slug": "2021",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 478,
+                      "name": "2022",
+                      "slug": "2022",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 479,
+                      "name": "2023",
+                      "slug": "2023",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 480,
+                      "name": "2024",
+                      "slug": "2024",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 481,
+                      "name": "2025",
+                      "slug": "2025",
+                      "description": "",
+                      "count": 1
+                    }
+                  ],
+                  "has_values": true,
+                  "parent_value_requirements": [],
+                  "children": [],
+                  "has_children": false
+                }
+              ],
+              "has_children": true
+            }
+          ],
+          "has_children": true
+        },
+        {
+          "id": 0,
+          "name": "",
+          "label": "",
+          "type": "",
+          "order_by": "",
+          "parent_ids": [
+            "3"
+          ],
+          "has_multiple_parents": false,
+          "is_root": false,
+          "values": [
+            {
+              "id": 372,
+              "name": "سيلو",
+              "slug": "%d8%b3%d9%8a%d9%84%d9%88",
+              "description": "",
+              "count": 0
+            },
+            {
+              "id": 373,
+              "name": "كالوس",
+              "slug": "%d9%83%d8%a7%d9%84%d9%88%d8%b3",
+              "description": "",
+              "count": 0
+            },
+            {
+              "id": 374,
+              "name": "لاسيتي",
+              "slug": "%d9%84%d8%a7%d8%b3%d9%8a%d8%aa%d9%8a",
+              "description": "",
+              "count": 0
+            },
+            {
+              "id": 375,
+              "name": "لانوس",
+              "slug": "%d9%84%d8%a7%d9%86%d9%88%d8%b3",
+              "description": "",
+              "count": 0
+            },
+            {
+              "id": 376,
+              "name": "نيبرا 1",
+              "slug": "%d9%86%d9%8a%d8%a8%d8%b1%d8%a7-1",
+              "description": "",
+              "count": 1
+            },
+            {
+              "id": 377,
+              "name": "نيبرا 2",
+              "slug": "%d9%86%d9%8a%d8%a8%d8%b1%d8%a7-2",
+              "description": "",
+              "count": 0
+            }
+          ],
+          "has_values": true,
+          "parent_value_requirements": [],
+          "children": [
+            {
+              "id": 0,
+              "name": "",
+              "label": "",
+              "type": "",
+              "order_by": "",
+              "parent_ids": [
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9",
+                "10"
+              ],
+              "has_multiple_parents": true,
+              "is_root": false,
+              "values": [
+                {
+                  "id": 493,
+                  "name": "0.9",
+                  "slug": "0-9",
+                  "description": "",
+                  "count": 3
+                },
+                {
+                  "id": 494,
+                  "name": "1.0",
+                  "slug": "1-0",
+                  "description": "",
+                  "count": 2
+                },
+                {
+                  "id": 495,
+                  "name": "1.2",
+                  "slug": "1-2",
+                  "description": "",
+                  "count": 2
+                },
+                {
+                  "id": 496,
+                  "name": "1.4",
+                  "slug": "1-4",
+                  "description": "",
+                  "count": 2
+                },
+                {
+                  "id": 497,
+                  "name": "1.5",
+                  "slug": "1-5",
+                  "description": "",
+                  "count": 2
+                },
+                {
+                  "id": 498,
+                  "name": "1.6",
+                  "slug": "1-6",
+                  "description": "",
+                  "count": 2
+                },
+                {
+                  "id": 499,
+                  "name": "1.8",
+                  "slug": "1-8",
+                  "description": "",
+                  "count": 2
+                },
+                {
+                  "id": 500,
+                  "name": "2.0",
+                  "slug": "2-0",
+                  "description": "",
+                  "count": 1
+                },
+                {
+                  "id": 501,
+                  "name": "2.4",
+                  "slug": "2-4",
+                  "description": "",
+                  "count": 1
+                },
+                {
+                  "id": 502,
+                  "name": "2.5",
+                  "slug": "2-5",
+                  "description": "",
+                  "count": 1
+                },
+                {
+                  "id": 503,
+                  "name": "3.0",
+                  "slug": "3-0",
+                  "description": "",
+                  "count": 1
+                },
+                {
+                  "id": 504,
+                  "name": "3.5",
+                  "slug": "3-5",
+                  "description": "",
+                  "count": 2
+                },
+                {
+                  "id": 505,
+                  "name": "4.0",
+                  "slug": "4-0",
+                  "description": "",
+                  "count": 2
+                },
+                {
+                  "id": 506,
+                  "name": "5.0",
+                  "slug": "5-0",
+                  "description": "",
+                  "count": 2
+                },
+                {
+                  "id": 507,
+                  "name": "6.0",
+                  "slug": "6-0",
+                  "description": "",
+                  "count": 2
+                },
+                {
+                  "id": 508,
+                  "name": "6.5",
+                  "slug": "6-5",
+                  "description": "",
+                  "count": 2
+                },
+                {
+                  "id": 509,
+                  "name": "8.0",
+                  "slug": "8-0",
+                  "description": "",
+                  "count": 2
+                }
+              ],
+              "has_values": true,
+              "parent_value_requirements": [],
+              "children": [
+                {
+                  "id": 0,
+                  "name": "",
+                  "label": "",
+                  "type": "",
+                  "order_by": "",
+                  "parent_ids": [
+                    "12"
+                  ],
+                  "has_multiple_parents": false,
+                  "is_root": false,
+                  "values": [
+                    {
+                      "id": 436,
+                      "name": "1980",
+                      "slug": "1980",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 437,
+                      "name": "1981",
+                      "slug": "1981",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 438,
+                      "name": "1982",
+                      "slug": "1982",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 439,
+                      "name": "1983",
+                      "slug": "1983",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 440,
+                      "name": "1984",
+                      "slug": "1984",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 441,
+                      "name": "1985",
+                      "slug": "1985",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 442,
+                      "name": "1986",
+                      "slug": "1986",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 443,
+                      "name": "1987",
+                      "slug": "1987",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 444,
+                      "name": "1988",
+                      "slug": "1988",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 445,
+                      "name": "1989",
+                      "slug": "1989",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 446,
+                      "name": "1990",
+                      "slug": "1990",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 447,
+                      "name": "1991",
+                      "slug": "1991",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 448,
+                      "name": "1992",
+                      "slug": "1992",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 449,
+                      "name": "1993",
+                      "slug": "1993",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 450,
+                      "name": "1994",
+                      "slug": "1994",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 451,
+                      "name": "1995",
+                      "slug": "1995",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 452,
+                      "name": "1996",
+                      "slug": "1996",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 453,
+                      "name": "1997",
+                      "slug": "1997",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 454,
+                      "name": "1998",
+                      "slug": "1998",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 455,
+                      "name": "1999",
+                      "slug": "1999",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 456,
+                      "name": "2000",
+                      "slug": "2000",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 457,
+                      "name": "2001",
+                      "slug": "2001",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 458,
+                      "name": "2002",
+                      "slug": "2002",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 459,
+                      "name": "2003",
+                      "slug": "2003",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 460,
+                      "name": "2004",
+                      "slug": "2004",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 461,
+                      "name": "2005",
+                      "slug": "2005",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 462,
+                      "name": "2006",
+                      "slug": "2006",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 463,
+                      "name": "2007",
+                      "slug": "2007",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 464,
+                      "name": "2008",
+                      "slug": "2008",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 465,
+                      "name": "2009",
+                      "slug": "2009",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 466,
+                      "name": "2010",
+                      "slug": "2010",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 467,
+                      "name": "2011",
+                      "slug": "2011",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 468,
+                      "name": "2012",
+                      "slug": "2012",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 469,
+                      "name": "2013",
+                      "slug": "2013",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 470,
+                      "name": "2014",
+                      "slug": "2014",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 471,
+                      "name": "2015",
+                      "slug": "2015",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 472,
+                      "name": "2016",
+                      "slug": "2016",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 473,
+                      "name": "2017",
+                      "slug": "2017",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 474,
+                      "name": "2018",
+                      "slug": "2018",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 475,
+                      "name": "2019",
+                      "slug": "2019",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 476,
+                      "name": "2020",
+                      "slug": "2020",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 477,
+                      "name": "2021",
+                      "slug": "2021",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 478,
+                      "name": "2022",
+                      "slug": "2022",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 479,
+                      "name": "2023",
+                      "slug": "2023",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 480,
+                      "name": "2024",
+                      "slug": "2024",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 481,
+                      "name": "2025",
+                      "slug": "2025",
+                      "description": "",
+                      "count": 1
+                    }
+                  ],
+                  "has_values": true,
+                  "parent_value_requirements": [],
+                  "children": [],
+                  "has_children": false
+                }
+              ],
+              "has_children": true
+            }
+          ],
+          "has_children": true
+        },
+        {
+          "id": 0,
+          "name": "",
+          "label": "",
+          "type": "",
+          "order_by": "",
+          "parent_ids": [
+            "3"
+          ],
+          "has_multiple_parents": false,
+          "is_root": false,
+          "values": [
+            {
+              "id": 378,
+              "name": "sm3",
+              "slug": "sm3",
+              "description": "",
+              "count": 1
+            },
+            {
+              "id": 379,
+              "name": "sm5",
+              "slug": "sm5",
+              "description": "",
+              "count": 1
+            },
+            {
+              "id": 380,
+              "name": "sm7",
+              "slug": "sm7",
+              "description": "",
+              "count": 1
+            }
+          ],
+          "has_values": true,
+          "parent_value_requirements": [],
+          "children": [
+            {
+              "id": 0,
+              "name": "",
+              "label": "",
+              "type": "",
+              "order_by": "",
+              "parent_ids": [
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9",
+                "10"
+              ],
+              "has_multiple_parents": true,
+              "is_root": false,
+              "values": [
+                {
+                  "id": 493,
+                  "name": "0.9",
+                  "slug": "0-9",
+                  "description": "",
+                  "count": 3
+                },
+                {
+                  "id": 494,
+                  "name": "1.0",
+                  "slug": "1-0",
+                  "description": "",
+                  "count": 2
+                },
+                {
+                  "id": 495,
+                  "name": "1.2",
+                  "slug": "1-2",
+                  "description": "",
+                  "count": 2
+                },
+                {
+                  "id": 496,
+                  "name": "1.4",
+                  "slug": "1-4",
+                  "description": "",
+                  "count": 2
+                },
+                {
+                  "id": 497,
+                  "name": "1.5",
+                  "slug": "1-5",
+                  "description": "",
+                  "count": 2
+                },
+                {
+                  "id": 498,
+                  "name": "1.6",
+                  "slug": "1-6",
+                  "description": "",
+                  "count": 2
+                },
+                {
+                  "id": 499,
+                  "name": "1.8",
+                  "slug": "1-8",
+                  "description": "",
+                  "count": 2
+                },
+                {
+                  "id": 500,
+                  "name": "2.0",
+                  "slug": "2-0",
+                  "description": "",
+                  "count": 1
+                },
+                {
+                  "id": 501,
+                  "name": "2.4",
+                  "slug": "2-4",
+                  "description": "",
+                  "count": 1
+                },
+                {
+                  "id": 502,
+                  "name": "2.5",
+                  "slug": "2-5",
+                  "description": "",
+                  "count": 1
+                },
+                {
+                  "id": 503,
+                  "name": "3.0",
+                  "slug": "3-0",
+                  "description": "",
+                  "count": 1
+                },
+                {
+                  "id": 504,
+                  "name": "3.5",
+                  "slug": "3-5",
+                  "description": "",
+                  "count": 2
+                },
+                {
+                  "id": 505,
+                  "name": "4.0",
+                  "slug": "4-0",
+                  "description": "",
+                  "count": 2
+                },
+                {
+                  "id": 506,
+                  "name": "5.0",
+                  "slug": "5-0",
+                  "description": "",
+                  "count": 2
+                },
+                {
+                  "id": 507,
+                  "name": "6.0",
+                  "slug": "6-0",
+                  "description": "",
+                  "count": 2
+                },
+                {
+                  "id": 508,
+                  "name": "6.5",
+                  "slug": "6-5",
+                  "description": "",
+                  "count": 2
+                },
+                {
+                  "id": 509,
+                  "name": "8.0",
+                  "slug": "8-0",
+                  "description": "",
+                  "count": 2
+                }
+              ],
+              "has_values": true,
+              "parent_value_requirements": [],
+              "children": [
+                {
+                  "id": 0,
+                  "name": "",
+                  "label": "",
+                  "type": "",
+                  "order_by": "",
+                  "parent_ids": [
+                    "12"
+                  ],
+                  "has_multiple_parents": false,
+                  "is_root": false,
+                  "values": [
+                    {
+                      "id": 436,
+                      "name": "1980",
+                      "slug": "1980",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 437,
+                      "name": "1981",
+                      "slug": "1981",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 438,
+                      "name": "1982",
+                      "slug": "1982",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 439,
+                      "name": "1983",
+                      "slug": "1983",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 440,
+                      "name": "1984",
+                      "slug": "1984",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 441,
+                      "name": "1985",
+                      "slug": "1985",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 442,
+                      "name": "1986",
+                      "slug": "1986",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 443,
+                      "name": "1987",
+                      "slug": "1987",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 444,
+                      "name": "1988",
+                      "slug": "1988",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 445,
+                      "name": "1989",
+                      "slug": "1989",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 446,
+                      "name": "1990",
+                      "slug": "1990",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 447,
+                      "name": "1991",
+                      "slug": "1991",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 448,
+                      "name": "1992",
+                      "slug": "1992",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 449,
+                      "name": "1993",
+                      "slug": "1993",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 450,
+                      "name": "1994",
+                      "slug": "1994",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 451,
+                      "name": "1995",
+                      "slug": "1995",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 452,
+                      "name": "1996",
+                      "slug": "1996",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 453,
+                      "name": "1997",
+                      "slug": "1997",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 454,
+                      "name": "1998",
+                      "slug": "1998",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 455,
+                      "name": "1999",
+                      "slug": "1999",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 456,
+                      "name": "2000",
+                      "slug": "2000",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 457,
+                      "name": "2001",
+                      "slug": "2001",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 458,
+                      "name": "2002",
+                      "slug": "2002",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 459,
+                      "name": "2003",
+                      "slug": "2003",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 460,
+                      "name": "2004",
+                      "slug": "2004",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 461,
+                      "name": "2005",
+                      "slug": "2005",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 462,
+                      "name": "2006",
+                      "slug": "2006",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 463,
+                      "name": "2007",
+                      "slug": "2007",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 464,
+                      "name": "2008",
+                      "slug": "2008",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 465,
+                      "name": "2009",
+                      "slug": "2009",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 466,
+                      "name": "2010",
+                      "slug": "2010",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 467,
+                      "name": "2011",
+                      "slug": "2011",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 468,
+                      "name": "2012",
+                      "slug": "2012",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 469,
+                      "name": "2013",
+                      "slug": "2013",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 470,
+                      "name": "2014",
+                      "slug": "2014",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 471,
+                      "name": "2015",
+                      "slug": "2015",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 472,
+                      "name": "2016",
+                      "slug": "2016",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 473,
+                      "name": "2017",
+                      "slug": "2017",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 474,
+                      "name": "2018",
+                      "slug": "2018",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 475,
+                      "name": "2019",
+                      "slug": "2019",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 476,
+                      "name": "2020",
+                      "slug": "2020",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 477,
+                      "name": "2021",
+                      "slug": "2021",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 478,
+                      "name": "2022",
+                      "slug": "2022",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 479,
+                      "name": "2023",
+                      "slug": "2023",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 480,
+                      "name": "2024",
+                      "slug": "2024",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 481,
+                      "name": "2025",
+                      "slug": "2025",
+                      "description": "",
+                      "count": 1
+                    }
+                  ],
+                  "has_values": true,
+                  "parent_value_requirements": [],
+                  "children": [],
+                  "has_children": false
+                }
+              ],
+              "has_children": true
+            }
+          ],
+          "has_children": true
+        },
+        {
+          "id": 0,
+          "name": "",
+          "label": "",
+          "type": "",
+          "order_by": "",
+          "parent_ids": [
+            "3"
+          ],
+          "has_multiple_parents": false,
+          "is_root": false,
+          "values": [
+            {
+              "id": 381,
+              "name": "افيو",
+              "slug": "%d8%a7%d9%81%d9%8a%d9%88",
+              "description": "",
+              "count": 1
+            },
+            {
+              "id": 382,
+              "name": "اوبترا",
+              "slug": "%d8%a7%d9%88%d8%a8%d8%aa%d8%b1%d8%a7",
+              "description": "",
+              "count": 2
+            },
+            {
+              "id": 383,
+              "name": "كروز",
+              "slug": "%d9%83%d8%b1%d9%88%d8%b2",
+              "description": "",
+              "count": 3
+            }
+          ],
+          "has_values": true,
+          "parent_value_requirements": [],
+          "children": [
+            {
+              "id": 0,
+              "name": "",
+              "label": "",
+              "type": "",
+              "order_by": "",
+              "parent_ids": [
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9",
+                "10"
+              ],
+              "has_multiple_parents": true,
+              "is_root": false,
+              "values": [
+                {
+                  "id": 493,
+                  "name": "0.9",
+                  "slug": "0-9",
+                  "description": "",
+                  "count": 3
+                },
+                {
+                  "id": 494,
+                  "name": "1.0",
+                  "slug": "1-0",
+                  "description": "",
+                  "count": 2
+                },
+                {
+                  "id": 495,
+                  "name": "1.2",
+                  "slug": "1-2",
+                  "description": "",
+                  "count": 2
+                },
+                {
+                  "id": 496,
+                  "name": "1.4",
+                  "slug": "1-4",
+                  "description": "",
+                  "count": 2
+                },
+                {
+                  "id": 497,
+                  "name": "1.5",
+                  "slug": "1-5",
+                  "description": "",
+                  "count": 2
+                },
+                {
+                  "id": 498,
+                  "name": "1.6",
+                  "slug": "1-6",
+                  "description": "",
+                  "count": 2
+                },
+                {
+                  "id": 499,
+                  "name": "1.8",
+                  "slug": "1-8",
+                  "description": "",
+                  "count": 2
+                },
+                {
+                  "id": 500,
+                  "name": "2.0",
+                  "slug": "2-0",
+                  "description": "",
+                  "count": 1
+                },
+                {
+                  "id": 501,
+                  "name": "2.4",
+                  "slug": "2-4",
+                  "description": "",
+                  "count": 1
+                },
+                {
+                  "id": 502,
+                  "name": "2.5",
+                  "slug": "2-5",
+                  "description": "",
+                  "count": 1
+                },
+                {
+                  "id": 503,
+                  "name": "3.0",
+                  "slug": "3-0",
+                  "description": "",
+                  "count": 1
+                },
+                {
+                  "id": 504,
+                  "name": "3.5",
+                  "slug": "3-5",
+                  "description": "",
+                  "count": 2
+                },
+                {
+                  "id": 505,
+                  "name": "4.0",
+                  "slug": "4-0",
+                  "description": "",
+                  "count": 2
+                },
+                {
+                  "id": 506,
+                  "name": "5.0",
+                  "slug": "5-0",
+                  "description": "",
+                  "count": 2
+                },
+                {
+                  "id": 507,
+                  "name": "6.0",
+                  "slug": "6-0",
+                  "description": "",
+                  "count": 2
+                },
+                {
+                  "id": 508,
+                  "name": "6.5",
+                  "slug": "6-5",
+                  "description": "",
+                  "count": 2
+                },
+                {
+                  "id": 509,
+                  "name": "8.0",
+                  "slug": "8-0",
+                  "description": "",
+                  "count": 2
+                }
+              ],
+              "has_values": true,
+              "parent_value_requirements": [],
+              "children": [
+                {
+                  "id": 0,
+                  "name": "",
+                  "label": "",
+                  "type": "",
+                  "order_by": "",
+                  "parent_ids": [
+                    "12"
+                  ],
+                  "has_multiple_parents": false,
+                  "is_root": false,
+                  "values": [
+                    {
+                      "id": 436,
+                      "name": "1980",
+                      "slug": "1980",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 437,
+                      "name": "1981",
+                      "slug": "1981",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 438,
+                      "name": "1982",
+                      "slug": "1982",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 439,
+                      "name": "1983",
+                      "slug": "1983",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 440,
+                      "name": "1984",
+                      "slug": "1984",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 441,
+                      "name": "1985",
+                      "slug": "1985",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 442,
+                      "name": "1986",
+                      "slug": "1986",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 443,
+                      "name": "1987",
+                      "slug": "1987",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 444,
+                      "name": "1988",
+                      "slug": "1988",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 445,
+                      "name": "1989",
+                      "slug": "1989",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 446,
+                      "name": "1990",
+                      "slug": "1990",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 447,
+                      "name": "1991",
+                      "slug": "1991",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 448,
+                      "name": "1992",
+                      "slug": "1992",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 449,
+                      "name": "1993",
+                      "slug": "1993",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 450,
+                      "name": "1994",
+                      "slug": "1994",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 451,
+                      "name": "1995",
+                      "slug": "1995",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 452,
+                      "name": "1996",
+                      "slug": "1996",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 453,
+                      "name": "1997",
+                      "slug": "1997",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 454,
+                      "name": "1998",
+                      "slug": "1998",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 455,
+                      "name": "1999",
+                      "slug": "1999",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 456,
+                      "name": "2000",
+                      "slug": "2000",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 457,
+                      "name": "2001",
+                      "slug": "2001",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 458,
+                      "name": "2002",
+                      "slug": "2002",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 459,
+                      "name": "2003",
+                      "slug": "2003",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 460,
+                      "name": "2004",
+                      "slug": "2004",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 461,
+                      "name": "2005",
+                      "slug": "2005",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 462,
+                      "name": "2006",
+                      "slug": "2006",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 463,
+                      "name": "2007",
+                      "slug": "2007",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 464,
+                      "name": "2008",
+                      "slug": "2008",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 465,
+                      "name": "2009",
+                      "slug": "2009",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 466,
+                      "name": "2010",
+                      "slug": "2010",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 467,
+                      "name": "2011",
+                      "slug": "2011",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 468,
+                      "name": "2012",
+                      "slug": "2012",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 469,
+                      "name": "2013",
+                      "slug": "2013",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 470,
+                      "name": "2014",
+                      "slug": "2014",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 471,
+                      "name": "2015",
+                      "slug": "2015",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 472,
+                      "name": "2016",
+                      "slug": "2016",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 473,
+                      "name": "2017",
+                      "slug": "2017",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 474,
+                      "name": "2018",
+                      "slug": "2018",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 475,
+                      "name": "2019",
+                      "slug": "2019",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 476,
+                      "name": "2020",
+                      "slug": "2020",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 477,
+                      "name": "2021",
+                      "slug": "2021",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 478,
+                      "name": "2022",
+                      "slug": "2022",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 479,
+                      "name": "2023",
+                      "slug": "2023",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 480,
+                      "name": "2024",
+                      "slug": "2024",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 481,
+                      "name": "2025",
+                      "slug": "2025",
+                      "description": "",
+                      "count": 1
+                    }
+                  ],
+                  "has_values": true,
+                  "parent_value_requirements": [],
+                  "children": [],
+                  "has_children": false
+                }
+              ],
+              "has_children": true
+            }
+          ],
+          "has_children": true
+        },
+        {
+          "id": 0,
+          "name": "",
+          "label": "",
+          "type": "",
+          "order_by": "",
+          "parent_ids": [
+            "3"
+          ],
+          "has_multiple_parents": false,
+          "is_root": false,
+          "values": [
+            {
+              "id": 384,
+              "name": "k3",
+              "slug": "k3",
+              "description": "",
+              "count": 1
+            },
+            {
+              "id": 385,
+              "name": "k5",
+              "slug": "k5",
+              "description": "",
+              "count": 1
+            },
+            {
+              "id": 386,
+              "name": "k7",
+              "slug": "k7",
+              "description": "",
+              "count": 1
+            },
+            {
+              "id": 387,
+              "name": "اوبتيما",
+              "slug": "%d8%a7%d9%88%d8%a8%d8%aa%d9%8a%d9%85%d8%a7",
+              "description": "",
+              "count": 2
+            },
+            {
+              "id": 388,
+              "name": "اوبيراس",
+              "slug": "%d8%a7%d9%88%d8%a8%d9%8a%d8%b1%d8%a7%d8%b3",
+              "description": "",
+              "count": 1
+            },
+            {
+              "id": 389,
+              "name": "برايد",
+              "slug": "%d8%a8%d8%b1%d8%a7%d9%8a%d8%af",
+              "description": "",
+              "count": 1
+            },
+            {
+              "id": 390,
+              "name": "بيقاس",
+              "slug": "%d8%a8%d9%8a%d9%82%d8%a7%d8%b3",
+              "description": "",
+              "count": 1
+            },
+            {
+              "id": 391,
+              "name": "بيكانتو",
+              "slug": "%d8%a8%d9%8a%d9%83%d8%a7%d9%86%d8%aa%d9%88",
+              "description": "",
+              "count": 1
+            },
+            {
+              "id": 392,
+              "name": "روندو",
+              "slug": "%d8%b1%d9%88%d9%86%d8%af%d9%88",
+              "description": "",
+              "count": 1
+            },
+            {
+              "id": 393,
+              "name": "ريو",
+              "slug": "%d8%b1%d9%8a%d9%88",
+              "description": "",
+              "count": 1
+            },
+            {
+              "id": 394,
+              "name": "سبورتاج",
+              "slug": "%d8%b3%d8%a8%d9%88%d8%b1%d8%aa%d8%a7%d8%ac",
+              "description": "",
+              "count": 1
+            },
+            {
+              "id": 395,
+              "name": "سورينتو",
+              "slug": "%d8%b3%d9%88%d8%b1%d9%8a%d9%86%d8%aa%d9%88",
+              "description": "",
+              "count": 1
+            },
+            {
+              "id": 396,
+              "name": "سول",
+              "slug": "%d8%b3%d9%88%d9%84",
+              "description": "",
+              "count": 1
+            },
+            {
+              "id": 397,
+              "name": "سيدونا",
+              "slug": "%d8%b3%d9%8a%d8%af%d9%88%d9%86%d8%a7",
+              "description": "",
+              "count": 1
+            },
+            {
+              "id": 398,
+              "name": "سيراتو",
+              "slug": "%d8%b3%d9%8a%d8%b1%d8%a7%d8%aa%d9%88",
+              "description": "",
+              "count": 1
+            },
+            {
+              "id": 399,
+              "name": "سييد",
+              "slug": "%d8%b3%d9%8a%d9%8a%d8%af",
+              "description": "",
+              "count": 1
+            },
+            {
+              "id": 400,
+              "name": "فورتى",
+              "slug": "%d9%81%d9%88%d8%b1%d8%aa%d9%89",
+              "description": "",
+              "count": 1
+            },
+            {
+              "id": 401,
+              "name": "كادينزا",
+              "slug": "%d9%83%d8%a7%d8%af%d9%8a%d9%86%d8%b2%d8%a7",
+              "description": "",
+              "count": 1
+            },
+            {
+              "id": 402,
+              "name": "كارينس",
+              "slug": "%d9%83%d8%a7%d8%b1%d9%8a%d9%86%d8%b3",
+              "description": "",
+              "count": 1
+            },
+            {
+              "id": 403,
+              "name": "كرنفال",
+              "slug": "%d9%83%d8%b1%d9%86%d9%81%d8%a7%d9%84",
+              "description": "",
+              "count": 1
+            },
+            {
+              "id": 404,
+              "name": "كيورس",
+              "slug": "%d9%83%d9%8a%d9%88%d8%b1%d8%b3",
+              "description": "",
+              "count": 1
+            },
+            {
+              "id": 405,
+              "name": "لوتزي",
+              "slug": "%d9%84%d9%88%d8%aa%d8%b2%d9%8a",
+              "description": "",
+              "count": 1
+            },
+            {
+              "id": 406,
+              "name": "مورنينق",
+              "slug": "%d9%85%d9%88%d8%b1%d9%86%d9%8a%d9%86%d9%82",
+              "description": "",
+              "count": 1
+            },
+            {
+              "id": 407,
+              "name": "موهافي",
+              "slug": "%d9%85%d9%88%d9%87%d8%a7%d9%81%d9%8a",
+              "description": "",
+              "count": 1
+            }
+          ],
+          "has_values": true,
+          "parent_value_requirements": [],
+          "children": [
+            {
+              "id": 0,
+              "name": "",
+              "label": "",
+              "type": "",
+              "order_by": "",
+              "parent_ids": [
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9",
+                "10"
+              ],
+              "has_multiple_parents": true,
+              "is_root": false,
+              "values": [
+                {
+                  "id": 493,
+                  "name": "0.9",
+                  "slug": "0-9",
+                  "description": "",
+                  "count": 3
+                },
+                {
+                  "id": 494,
+                  "name": "1.0",
+                  "slug": "1-0",
+                  "description": "",
+                  "count": 2
+                },
+                {
+                  "id": 495,
+                  "name": "1.2",
+                  "slug": "1-2",
+                  "description": "",
+                  "count": 2
+                },
+                {
+                  "id": 496,
+                  "name": "1.4",
+                  "slug": "1-4",
+                  "description": "",
+                  "count": 2
+                },
+                {
+                  "id": 497,
+                  "name": "1.5",
+                  "slug": "1-5",
+                  "description": "",
+                  "count": 2
+                },
+                {
+                  "id": 498,
+                  "name": "1.6",
+                  "slug": "1-6",
+                  "description": "",
+                  "count": 2
+                },
+                {
+                  "id": 499,
+                  "name": "1.8",
+                  "slug": "1-8",
+                  "description": "",
+                  "count": 2
+                },
+                {
+                  "id": 500,
+                  "name": "2.0",
+                  "slug": "2-0",
+                  "description": "",
+                  "count": 1
+                },
+                {
+                  "id": 501,
+                  "name": "2.4",
+                  "slug": "2-4",
+                  "description": "",
+                  "count": 1
+                },
+                {
+                  "id": 502,
+                  "name": "2.5",
+                  "slug": "2-5",
+                  "description": "",
+                  "count": 1
+                },
+                {
+                  "id": 503,
+                  "name": "3.0",
+                  "slug": "3-0",
+                  "description": "",
+                  "count": 1
+                },
+                {
+                  "id": 504,
+                  "name": "3.5",
+                  "slug": "3-5",
+                  "description": "",
+                  "count": 2
+                },
+                {
+                  "id": 505,
+                  "name": "4.0",
+                  "slug": "4-0",
+                  "description": "",
+                  "count": 2
+                },
+                {
+                  "id": 506,
+                  "name": "5.0",
+                  "slug": "5-0",
+                  "description": "",
+                  "count": 2
+                },
+                {
+                  "id": 507,
+                  "name": "6.0",
+                  "slug": "6-0",
+                  "description": "",
+                  "count": 2
+                },
+                {
+                  "id": 508,
+                  "name": "6.5",
+                  "slug": "6-5",
+                  "description": "",
+                  "count": 2
+                },
+                {
+                  "id": 509,
+                  "name": "8.0",
+                  "slug": "8-0",
+                  "description": "",
+                  "count": 2
+                }
+              ],
+              "has_values": true,
+              "parent_value_requirements": [],
+              "children": [
+                {
+                  "id": 0,
+                  "name": "",
+                  "label": "",
+                  "type": "",
+                  "order_by": "",
+                  "parent_ids": [
+                    "12"
+                  ],
+                  "has_multiple_parents": false,
+                  "is_root": false,
+                  "values": [
+                    {
+                      "id": 436,
+                      "name": "1980",
+                      "slug": "1980",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 437,
+                      "name": "1981",
+                      "slug": "1981",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 438,
+                      "name": "1982",
+                      "slug": "1982",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 439,
+                      "name": "1983",
+                      "slug": "1983",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 440,
+                      "name": "1984",
+                      "slug": "1984",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 441,
+                      "name": "1985",
+                      "slug": "1985",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 442,
+                      "name": "1986",
+                      "slug": "1986",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 443,
+                      "name": "1987",
+                      "slug": "1987",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 444,
+                      "name": "1988",
+                      "slug": "1988",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 445,
+                      "name": "1989",
+                      "slug": "1989",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 446,
+                      "name": "1990",
+                      "slug": "1990",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 447,
+                      "name": "1991",
+                      "slug": "1991",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 448,
+                      "name": "1992",
+                      "slug": "1992",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 449,
+                      "name": "1993",
+                      "slug": "1993",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 450,
+                      "name": "1994",
+                      "slug": "1994",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 451,
+                      "name": "1995",
+                      "slug": "1995",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 452,
+                      "name": "1996",
+                      "slug": "1996",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 453,
+                      "name": "1997",
+                      "slug": "1997",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 454,
+                      "name": "1998",
+                      "slug": "1998",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 455,
+                      "name": "1999",
+                      "slug": "1999",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 456,
+                      "name": "2000",
+                      "slug": "2000",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 457,
+                      "name": "2001",
+                      "slug": "2001",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 458,
+                      "name": "2002",
+                      "slug": "2002",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 459,
+                      "name": "2003",
+                      "slug": "2003",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 460,
+                      "name": "2004",
+                      "slug": "2004",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 461,
+                      "name": "2005",
+                      "slug": "2005",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 462,
+                      "name": "2006",
+                      "slug": "2006",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 463,
+                      "name": "2007",
+                      "slug": "2007",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 464,
+                      "name": "2008",
+                      "slug": "2008",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 465,
+                      "name": "2009",
+                      "slug": "2009",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 466,
+                      "name": "2010",
+                      "slug": "2010",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 467,
+                      "name": "2011",
+                      "slug": "2011",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 468,
+                      "name": "2012",
+                      "slug": "2012",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 469,
+                      "name": "2013",
+                      "slug": "2013",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 470,
+                      "name": "2014",
+                      "slug": "2014",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 471,
+                      "name": "2015",
+                      "slug": "2015",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 472,
+                      "name": "2016",
+                      "slug": "2016",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 473,
+                      "name": "2017",
+                      "slug": "2017",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 474,
+                      "name": "2018",
+                      "slug": "2018",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 475,
+                      "name": "2019",
+                      "slug": "2019",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 476,
+                      "name": "2020",
+                      "slug": "2020",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 477,
+                      "name": "2021",
+                      "slug": "2021",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 478,
+                      "name": "2022",
+                      "slug": "2022",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 479,
+                      "name": "2023",
+                      "slug": "2023",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 480,
+                      "name": "2024",
+                      "slug": "2024",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 481,
+                      "name": "2025",
+                      "slug": "2025",
+                      "description": "",
+                      "count": 1
+                    }
+                  ],
+                  "has_values": true,
+                  "parent_value_requirements": [],
+                  "children": [],
+                  "has_children": false
+                }
+              ],
+              "has_children": true
+            }
+          ],
+          "has_children": true
+        },
+        {
+          "id": 0,
+          "name": "",
+          "label": "",
+          "type": "",
+          "order_by": "",
+          "parent_ids": [
+            "3"
+          ],
+          "has_multiple_parents": false,
+          "is_root": false,
+          "values": [
+            {
+              "id": 408,
+              "name": "الميرا",
+              "slug": "%d8%a7%d9%84%d9%85%d9%8a%d8%b1%d8%a7",
+              "description": "",
+              "count": 2
+            },
+            {
+              "id": 409,
+              "name": "تيدا",
+              "slug": "%d8%aa%d9%8a%d8%af%d8%a7",
+              "description": "",
+              "count": 1
+            },
+            {
+              "id": 410,
+              "name": "صاني",
+              "slug": "%d8%b5%d8%a7%d9%86%d9%8a",
+              "description": "",
+              "count": 2
+            },
+            {
+              "id": 411,
+              "name": "ميكرا",
+              "slug": "%d9%85%d9%8a%d9%83%d8%b1%d8%a7",
+              "description": "",
+              "count": 1
+            }
+          ],
+          "has_values": true,
+          "parent_value_requirements": [],
+          "children": [
+            {
+              "id": 0,
+              "name": "",
+              "label": "",
+              "type": "",
+              "order_by": "",
+              "parent_ids": [
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9",
+                "10"
+              ],
+              "has_multiple_parents": true,
+              "is_root": false,
+              "values": [
+                {
+                  "id": 493,
+                  "name": "0.9",
+                  "slug": "0-9",
+                  "description": "",
+                  "count": 3
+                },
+                {
+                  "id": 494,
+                  "name": "1.0",
+                  "slug": "1-0",
+                  "description": "",
+                  "count": 2
+                },
+                {
+                  "id": 495,
+                  "name": "1.2",
+                  "slug": "1-2",
+                  "description": "",
+                  "count": 2
+                },
+                {
+                  "id": 496,
+                  "name": "1.4",
+                  "slug": "1-4",
+                  "description": "",
+                  "count": 2
+                },
+                {
+                  "id": 497,
+                  "name": "1.5",
+                  "slug": "1-5",
+                  "description": "",
+                  "count": 2
+                },
+                {
+                  "id": 498,
+                  "name": "1.6",
+                  "slug": "1-6",
+                  "description": "",
+                  "count": 2
+                },
+                {
+                  "id": 499,
+                  "name": "1.8",
+                  "slug": "1-8",
+                  "description": "",
+                  "count": 2
+                },
+                {
+                  "id": 500,
+                  "name": "2.0",
+                  "slug": "2-0",
+                  "description": "",
+                  "count": 1
+                },
+                {
+                  "id": 501,
+                  "name": "2.4",
+                  "slug": "2-4",
+                  "description": "",
+                  "count": 1
+                },
+                {
+                  "id": 502,
+                  "name": "2.5",
+                  "slug": "2-5",
+                  "description": "",
+                  "count": 1
+                },
+                {
+                  "id": 503,
+                  "name": "3.0",
+                  "slug": "3-0",
+                  "description": "",
+                  "count": 1
+                },
+                {
+                  "id": 504,
+                  "name": "3.5",
+                  "slug": "3-5",
+                  "description": "",
+                  "count": 2
+                },
+                {
+                  "id": 505,
+                  "name": "4.0",
+                  "slug": "4-0",
+                  "description": "",
+                  "count": 2
+                },
+                {
+                  "id": 506,
+                  "name": "5.0",
+                  "slug": "5-0",
+                  "description": "",
+                  "count": 2
+                },
+                {
+                  "id": 507,
+                  "name": "6.0",
+                  "slug": "6-0",
+                  "description": "",
+                  "count": 2
+                },
+                {
+                  "id": 508,
+                  "name": "6.5",
+                  "slug": "6-5",
+                  "description": "",
+                  "count": 2
+                },
+                {
+                  "id": 509,
+                  "name": "8.0",
+                  "slug": "8-0",
+                  "description": "",
+                  "count": 2
+                }
+              ],
+              "has_values": true,
+              "parent_value_requirements": [],
+              "children": [
+                {
+                  "id": 0,
+                  "name": "",
+                  "label": "",
+                  "type": "",
+                  "order_by": "",
+                  "parent_ids": [
+                    "12"
+                  ],
+                  "has_multiple_parents": false,
+                  "is_root": false,
+                  "values": [
+                    {
+                      "id": 436,
+                      "name": "1980",
+                      "slug": "1980",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 437,
+                      "name": "1981",
+                      "slug": "1981",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 438,
+                      "name": "1982",
+                      "slug": "1982",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 439,
+                      "name": "1983",
+                      "slug": "1983",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 440,
+                      "name": "1984",
+                      "slug": "1984",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 441,
+                      "name": "1985",
+                      "slug": "1985",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 442,
+                      "name": "1986",
+                      "slug": "1986",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 443,
+                      "name": "1987",
+                      "slug": "1987",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 444,
+                      "name": "1988",
+                      "slug": "1988",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 445,
+                      "name": "1989",
+                      "slug": "1989",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 446,
+                      "name": "1990",
+                      "slug": "1990",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 447,
+                      "name": "1991",
+                      "slug": "1991",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 448,
+                      "name": "1992",
+                      "slug": "1992",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 449,
+                      "name": "1993",
+                      "slug": "1993",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 450,
+                      "name": "1994",
+                      "slug": "1994",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 451,
+                      "name": "1995",
+                      "slug": "1995",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 452,
+                      "name": "1996",
+                      "slug": "1996",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 453,
+                      "name": "1997",
+                      "slug": "1997",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 454,
+                      "name": "1998",
+                      "slug": "1998",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 455,
+                      "name": "1999",
+                      "slug": "1999",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 456,
+                      "name": "2000",
+                      "slug": "2000",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 457,
+                      "name": "2001",
+                      "slug": "2001",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 458,
+                      "name": "2002",
+                      "slug": "2002",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 459,
+                      "name": "2003",
+                      "slug": "2003",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 460,
+                      "name": "2004",
+                      "slug": "2004",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 461,
+                      "name": "2005",
+                      "slug": "2005",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 462,
+                      "name": "2006",
+                      "slug": "2006",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 463,
+                      "name": "2007",
+                      "slug": "2007",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 464,
+                      "name": "2008",
+                      "slug": "2008",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 465,
+                      "name": "2009",
+                      "slug": "2009",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 466,
+                      "name": "2010",
+                      "slug": "2010",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 467,
+                      "name": "2011",
+                      "slug": "2011",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 468,
+                      "name": "2012",
+                      "slug": "2012",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 469,
+                      "name": "2013",
+                      "slug": "2013",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 470,
+                      "name": "2014",
+                      "slug": "2014",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 471,
+                      "name": "2015",
+                      "slug": "2015",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 472,
+                      "name": "2016",
+                      "slug": "2016",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 473,
+                      "name": "2017",
+                      "slug": "2017",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 474,
+                      "name": "2018",
+                      "slug": "2018",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 475,
+                      "name": "2019",
+                      "slug": "2019",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 476,
+                      "name": "2020",
+                      "slug": "2020",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 477,
+                      "name": "2021",
+                      "slug": "2021",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 478,
+                      "name": "2022",
+                      "slug": "2022",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 479,
+                      "name": "2023",
+                      "slug": "2023",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 480,
+                      "name": "2024",
+                      "slug": "2024",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 481,
+                      "name": "2025",
+                      "slug": "2025",
+                      "description": "",
+                      "count": 1
+                    }
+                  ],
+                  "has_values": true,
+                  "parent_value_requirements": [],
+                  "children": [],
+                  "has_children": false
+                }
+              ],
+              "has_children": true
+            }
+          ],
+          "has_children": true
+        },
+        {
+          "id": 0,
+          "name": "",
+          "label": "",
+          "type": "",
+          "order_by": "",
+          "parent_ids": [
+            "3"
+          ],
+          "has_multiple_parents": false,
+          "is_root": false,
+          "values": [
+            {
+              "id": 412,
+              "name": "I 10",
+              "slug": "i-10",
+              "description": "",
+              "count": 1
+            },
+            {
+              "id": 413,
+              "name": "I 20",
+              "slug": "i-20",
+              "description": "",
+              "count": 1
+            },
+            {
+              "id": 414,
+              "name": "I 30",
+              "slug": "i-30",
+              "description": "",
+              "count": 1
+            },
+            {
+              "id": 415,
+              "name": "اتوز",
+              "slug": "%d8%a7%d8%aa%d9%88%d8%b2",
+              "description": "",
+              "count": 1
+            },
+            {
+              "id": 416,
+              "name": "ازيرا",
+              "slug": "%d8%a7%d8%b2%d9%8a%d8%b1%d8%a7",
+              "description": "",
+              "count": 1
+            },
+            {
+              "id": 417,
+              "name": "افانتى",
+              "slug": "%d8%a7%d9%81%d8%a7%d9%86%d8%aa%d9%89",
+              "description": "",
+              "count": 1
+            },
+            {
+              "id": 418,
+              "name": "اكسنت",
+              "slug": "%d8%a7%d9%83%d8%b3%d9%86%d8%aa",
+              "description": "",
+              "count": 1
+            },
+            {
+              "id": 419,
+              "name": "النترا",
+              "slug": "%d8%a7%d9%84%d9%86%d8%aa%d8%b1%d8%a7",
+              "description": "",
+              "count": 1
+            },
+            {
+              "id": 420,
+              "name": "انتوراج",
+              "slug": "%d8%a7%d9%86%d8%aa%d9%88%d8%b1%d8%a7%d8%ac",
+              "description": "",
+              "count": 1
+            },
+            {
+              "id": 421,
+              "name": "تراجيت",
+              "slug": "%d8%aa%d8%b1%d8%a7%d8%ac%d9%8a%d8%aa",
+              "description": "",
+              "count": 1
+            },
+            {
+              "id": 422,
+              "name": "توسان",
+              "slug": "%d8%aa%d9%88%d8%b3%d8%a7%d9%86",
+              "description": "",
+              "count": 1
+            },
+            {
+              "id": 423,
+              "name": "جنسس",
+              "slug": "%d8%ac%d9%86%d8%b3%d8%b3",
+              "description": "",
+              "count": 1
+            },
+            {
+              "id": 424,
+              "name": "جيتز",
+              "slug": "%d8%ac%d9%8a%d8%aa%d8%b2",
+              "description": "",
+              "count": 1
+            },
+            {
+              "id": 425,
+              "name": "سنتافي",
+              "slug": "%d8%b3%d9%86%d8%aa%d8%a7%d9%81%d9%8a",
+              "description": "",
+              "count": 1
+            },
+            {
+              "id": 426,
+              "name": "سوناتا",
+              "slug": "%d8%b3%d9%88%d9%86%d8%a7%d8%aa%d8%a7",
+              "description": "",
+              "count": 1
+            },
+            {
+              "id": 427,
+              "name": "فيركروز",
+              "slug": "%d9%81%d9%8a%d8%b1%d9%83%d8%b1%d9%88%d8%b2",
+              "description": "",
+              "count": 1
+            },
+            {
+              "id": 428,
+              "name": "فيرنا",
+              "slug": "%d9%81%d9%8a%d8%b1%d9%86%d8%a7",
+              "description": "",
+              "count": 1
+            },
+            {
+              "id": 429,
+              "name": "فيستو",
+              "slug": "%d9%81%d9%8a%d8%b3%d8%aa%d9%88",
+              "description": "",
+              "count": 1
+            },
+            {
+              "id": 430,
+              "name": "فينيو",
+              "slug": "%d9%81%d9%8a%d9%86%d9%8a%d9%88",
+              "description": "",
+              "count": 1
+            },
+            {
+              "id": 431,
+              "name": "قرانديور",
+              "slug": "%d9%82%d8%b1%d8%a7%d9%86%d8%af%d9%8a%d9%88%d8%b1",
+              "description": "",
+              "count": 1
+            },
+            {
+              "id": 432,
+              "name": "كريتا",
+              "slug": "%d9%83%d8%b1%d9%8a%d8%aa%d8%a7",
+              "description": "",
+              "count": 1
+            },
+            {
+              "id": 433,
+              "name": "كلك",
+              "slug": "%d9%83%d9%84%d9%83",
+              "description": "",
+              "count": 1
+            },
+            {
+              "id": 434,
+              "name": "لافيتا",
+              "slug": "%d9%84%d8%a7%d9%81%d9%8a%d8%aa%d8%a7",
+              "description": "",
+              "count": 1
+            },
+            {
+              "id": 435,
+              "name": "ماتركس",
+              "slug": "%d9%85%d8%a7%d8%aa%d8%b1%d9%83%d8%b3",
+              "description": "",
+              "count": 1
+            }
+          ],
+          "has_values": true,
+          "parent_value_requirements": [],
+          "children": [
+            {
+              "id": 0,
+              "name": "",
+              "label": "",
+              "type": "",
+              "order_by": "",
+              "parent_ids": [
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9",
+                "10"
+              ],
+              "has_multiple_parents": true,
+              "is_root": false,
+              "values": [
+                {
+                  "id": 493,
+                  "name": "0.9",
+                  "slug": "0-9",
+                  "description": "",
+                  "count": 3
+                },
+                {
+                  "id": 494,
+                  "name": "1.0",
+                  "slug": "1-0",
+                  "description": "",
+                  "count": 2
+                },
+                {
+                  "id": 495,
+                  "name": "1.2",
+                  "slug": "1-2",
+                  "description": "",
+                  "count": 2
+                },
+                {
+                  "id": 496,
+                  "name": "1.4",
+                  "slug": "1-4",
+                  "description": "",
+                  "count": 2
+                },
+                {
+                  "id": 497,
+                  "name": "1.5",
+                  "slug": "1-5",
+                  "description": "",
+                  "count": 2
+                },
+                {
+                  "id": 498,
+                  "name": "1.6",
+                  "slug": "1-6",
+                  "description": "",
+                  "count": 2
+                },
+                {
+                  "id": 499,
+                  "name": "1.8",
+                  "slug": "1-8",
+                  "description": "",
+                  "count": 2
+                },
+                {
+                  "id": 500,
+                  "name": "2.0",
+                  "slug": "2-0",
+                  "description": "",
+                  "count": 1
+                },
+                {
+                  "id": 501,
+                  "name": "2.4",
+                  "slug": "2-4",
+                  "description": "",
+                  "count": 1
+                },
+                {
+                  "id": 502,
+                  "name": "2.5",
+                  "slug": "2-5",
+                  "description": "",
+                  "count": 1
+                },
+                {
+                  "id": 503,
+                  "name": "3.0",
+                  "slug": "3-0",
+                  "description": "",
+                  "count": 1
+                },
+                {
+                  "id": 504,
+                  "name": "3.5",
+                  "slug": "3-5",
+                  "description": "",
+                  "count": 2
+                },
+                {
+                  "id": 505,
+                  "name": "4.0",
+                  "slug": "4-0",
+                  "description": "",
+                  "count": 2
+                },
+                {
+                  "id": 506,
+                  "name": "5.0",
+                  "slug": "5-0",
+                  "description": "",
+                  "count": 2
+                },
+                {
+                  "id": 507,
+                  "name": "6.0",
+                  "slug": "6-0",
+                  "description": "",
+                  "count": 2
+                },
+                {
+                  "id": 508,
+                  "name": "6.5",
+                  "slug": "6-5",
+                  "description": "",
+                  "count": 2
+                },
+                {
+                  "id": 509,
+                  "name": "8.0",
+                  "slug": "8-0",
+                  "description": "",
+                  "count": 2
+                }
+              ],
+              "has_values": true,
+              "parent_value_requirements": [],
+              "children": [
+                {
+                  "id": 0,
+                  "name": "",
+                  "label": "",
+                  "type": "",
+                  "order_by": "",
+                  "parent_ids": [
+                    "12"
+                  ],
+                  "has_multiple_parents": false,
+                  "is_root": false,
+                  "values": [
+                    {
+                      "id": 436,
+                      "name": "1980",
+                      "slug": "1980",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 437,
+                      "name": "1981",
+                      "slug": "1981",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 438,
+                      "name": "1982",
+                      "slug": "1982",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 439,
+                      "name": "1983",
+                      "slug": "1983",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 440,
+                      "name": "1984",
+                      "slug": "1984",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 441,
+                      "name": "1985",
+                      "slug": "1985",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 442,
+                      "name": "1986",
+                      "slug": "1986",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 443,
+                      "name": "1987",
+                      "slug": "1987",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 444,
+                      "name": "1988",
+                      "slug": "1988",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 445,
+                      "name": "1989",
+                      "slug": "1989",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 446,
+                      "name": "1990",
+                      "slug": "1990",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 447,
+                      "name": "1991",
+                      "slug": "1991",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 448,
+                      "name": "1992",
+                      "slug": "1992",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 449,
+                      "name": "1993",
+                      "slug": "1993",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 450,
+                      "name": "1994",
+                      "slug": "1994",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 451,
+                      "name": "1995",
+                      "slug": "1995",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 452,
+                      "name": "1996",
+                      "slug": "1996",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 453,
+                      "name": "1997",
+                      "slug": "1997",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 454,
+                      "name": "1998",
+                      "slug": "1998",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 455,
+                      "name": "1999",
+                      "slug": "1999",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 456,
+                      "name": "2000",
+                      "slug": "2000",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 457,
+                      "name": "2001",
+                      "slug": "2001",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 458,
+                      "name": "2002",
+                      "slug": "2002",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 459,
+                      "name": "2003",
+                      "slug": "2003",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 460,
+                      "name": "2004",
+                      "slug": "2004",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 461,
+                      "name": "2005",
+                      "slug": "2005",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 462,
+                      "name": "2006",
+                      "slug": "2006",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 463,
+                      "name": "2007",
+                      "slug": "2007",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 464,
+                      "name": "2008",
+                      "slug": "2008",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 465,
+                      "name": "2009",
+                      "slug": "2009",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 466,
+                      "name": "2010",
+                      "slug": "2010",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 467,
+                      "name": "2011",
+                      "slug": "2011",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 468,
+                      "name": "2012",
+                      "slug": "2012",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 469,
+                      "name": "2013",
+                      "slug": "2013",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 470,
+                      "name": "2014",
+                      "slug": "2014",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 471,
+                      "name": "2015",
+                      "slug": "2015",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 472,
+                      "name": "2016",
+                      "slug": "2016",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 473,
+                      "name": "2017",
+                      "slug": "2017",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 474,
+                      "name": "2018",
+                      "slug": "2018",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 475,
+                      "name": "2019",
+                      "slug": "2019",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 476,
+                      "name": "2020",
+                      "slug": "2020",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 477,
+                      "name": "2021",
+                      "slug": "2021",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 478,
+                      "name": "2022",
+                      "slug": "2022",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 479,
+                      "name": "2023",
+                      "slug": "2023",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 480,
+                      "name": "2024",
+                      "slug": "2024",
+                      "description": "",
+                      "count": 1
+                    },
+                    {
+                      "id": 481,
+                      "name": "2025",
+                      "slug": "2025",
+                      "description": "",
+                      "count": 1
+                    }
+                  ],
+                  "has_values": true,
+                  "parent_value_requirements": [],
+                  "children": [],
+                  "has_children": false
+                }
+              ],
+              "has_children": true
+            }
+          ],
+          "has_children": true
+        }
+      ],
+      "has_children": true
+    }
+  ]
+}
