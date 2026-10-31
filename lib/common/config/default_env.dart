@@ -560,7 +560,7 @@ class DefaultConfig {
   static Map payStackConfig = {
     'paymentMethodId': 'paystack',
     'publicKey': 'pk_test_a1a37615c9ca90dead5dd84dedbb5e476b640a6f',
-    'secretKey': 'sk_test_REPLACE_ME_ME',
+    'secretKey': 'sk_test_REPLACE_ME',
     'enableMobileMoney': false,
     'production': false,
     'enabled': false

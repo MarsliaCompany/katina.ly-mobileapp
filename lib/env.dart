@@ -769,7 +769,7 @@ final Map<String, dynamic> environment = {
     "enabled": true
   },
   "tapConfig": {
-    "SecretKey": "sk_test_REPLACE_ME_ME",
+    "SecretKey": "sk_test_REPLACE_ME",
     "paymentMethodId": "tap",
     "enabled": true
   },
@@ -789,7 +789,7 @@ final Map<String, dynamic> environment = {
   "payStackConfig": {
     'paymentMethodId': 'paystack',
     'publicKey': 'pk_test_a1a37615c9ca90dead5dd84dedbb5e476b640a6f',
-    'secretKey': 'sk_test_REPLACE_ME_ME',
+    'secretKey': 'sk_test_REPLACE_ME',
     'supportedCurrencies': ['ZAR'],
     'enableMobileMoney': true,
     'production': false,
