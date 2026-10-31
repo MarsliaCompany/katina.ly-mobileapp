@@ -18,6 +18,7 @@ import '../../../widgets/common/custom_text_field.dart';
 import '../../../widgets/common/phone_number_field_widget.dart';
 import '../../../widgets/common/login_animation.dart';
 import '../../base_screen.dart';
+import '../katina_auth_style.dart';
 import 'login_screen_web.dart';
 import 'mixins/mixin_animation_button_login.dart';
 import 'mixins/mixin_login.dart';
@@ -112,168 +113,149 @@ class _LoginPageState extends BaseScreen<LoginScreenMobile>
         appModel.appConfig?.forgetPassword ?? ServerConfig().forgetPassword;
 
     return Scaffold(
-      backgroundColor: Theme.of(context).colorScheme.surface,
-      appBar: AppBar(
-        backgroundColor: Theme.of(context).colorScheme.surface,
-        elevation: 0.0,
-        actions: !Services().widget.isRequiredLogin &&
-            !ModalRoute.of(context)!.canPop
-            ? [
-          IconButton(
-            onPressed: loginDone,
-            icon: const Icon(Icons.close, size: 25),
-          )
-        ]
-            : null,
-      ),
-      body: SafeArea(
-        child: AutoHideKeyboard(
-          child: IgnorePointer(
-            ignoring: isLoading,
-            child: Center(
-              child: Consumer<UserModel>(
-                builder: (context, model, child) {
-                  return Container(
-                    padding: const EdgeInsets.symmetric(horizontal: 24.0),
-                    alignment: Alignment.center,
-                    width: screenSize.width /
-                        (2 / (screenSize.height / screenSize.width)),
-                    constraints: const BoxConstraints(maxWidth: 700),
-                    child: AutofillGroup(
-                      child: Column(
-                        children: <Widget>[
-                          Expanded(
-                            flex: 1,
-                            child: FractionallySizedBox(
-                              widthFactor: 0.8,
-                              child: FluxImage(
-                                imageUrl: themeConfig.logo,
-                                fit: BoxFit.contain,
-                                useExtendedImage: false,
-                              ),
+      backgroundColor: KatinaAuthStyle.mist,
+      body: AutoHideKeyboard(
+        child: IgnorePointer(
+          ignoring: isLoading,
+          child: Consumer<UserModel>(
+            builder: (context, model, child) {
+              return CustomScrollView(
+                slivers: [
+                  SliverToBoxAdapter(
+                    child: Stack(
+                      children: [
+                        KatinaAuthStyle.heroHeader(
+                          context: context,
+                          logo: FluxImage(
+                            imageUrl: themeConfig.logo,
+                            fit: BoxFit.contain,
+                            useExtendedImage: false,
+                          ),
+                          title: 'مرحباً بك في كاتينة',
+                          subtitle: 'سجّل دخولك لمتابعة طلباتك وتسوق قطع الغيار بسهولة',
+                        ),
+                        if (!Services().widget.isRequiredLogin &&
+                            !ModalRoute.of(context)!.canPop)
+                          PositionedDirectional(
+                            top: MediaQuery.paddingOf(context).top + 4,
+                            end: 8,
+                            child: IconButton(
+                              onPressed: loginDone,
+                              icon: const Icon(Icons.close, color: Colors.white),
                             ),
                           ),
-                          Expanded(
-                            flex: 3,
-                            child: SingleChildScrollView(
-                              physics: const NeverScrollableScrollPhysics(),
-                              child: Column(
-                                mainAxisSize: MainAxisSize.min,
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  const SizedBox(height: 16.0),
-                                  Text(
-                                    S.of(context).phoneNumber,
-                                    style: Theme.of(context)
-                                        .textTheme
-                                        .labelLarge
-                                        ?.copyWith(fontWeight: FontWeight.bold),
+                      ],
+                    ),
+                  ),
+                  SliverToBoxAdapter(
+                    child: Transform.translate(
+                      offset: const Offset(0, -18),
+                      child: Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 18),
+                        child: Container(
+                          width: screenSize.width,
+                          constraints: const BoxConstraints(maxWidth: 520),
+                          padding: const EdgeInsets.fromLTRB(20, 22, 20, 18),
+                          decoration: KatinaAuthStyle.cardDecoration(context),
+                          child: AutofillGroup(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  S.of(context).phoneNumber,
+                                  style: Theme.of(context)
+                                      .textTheme
+                                      .labelLarge
+                                      ?.copyWith(fontWeight: FontWeight.w700),
+                                ),
+                                const SizedBox(height: 8),
+                                PhoneNumberFieldWidget(
+                                  phoneController: usernameCtrl,
+                                  labelText: null,
+                                  textInputAction: TextInputAction.next,
+                                  onPhoneNumberChanged: (value) {
+                                    final rawValue = value.phoneNumber ??
+                                        value.parseNumber() ??
+                                        '';
+                                    _latestPhoneInput = rawValue;
+                                  },
+                                ),
+                                const SizedBox(height: 16),
+                                Text(
+                                  S.of(context).password,
+                                  style: Theme.of(context)
+                                      .textTheme
+                                      .labelLarge
+                                      ?.copyWith(fontWeight: FontWeight.w700),
+                                ),
+                                const SizedBox(height: 8),
+                                CustomTextField(
+                                  controller: passwordCtrl,
+                                  focusNode: _passwordFocusNode,
+                                  obscureText: true,
+                                  showEyeIcon: true,
+                                  hintText: S.of(context).password,
+                                ),
+                                if (kLoginSetting.isResetPasswordSupported)
+                                  Align(
+                                    alignment: Alignment.centerLeft,
+                                    child: TextButton(
+                                      onPressed: isLoading
+                                          ? null
+                                          : () => launchForgetPasswordURL(
+                                              forgetPasswordUrl),
+                                      child: Text(S.of(context).resetPassword),
+                                    ),
                                   ),
-                                  const SizedBox(height: 8.0),
-                                  PhoneNumberFieldWidget(
-                                    phoneController: usernameCtrl,
-                                    labelText: null,
-                                    textInputAction: TextInputAction.next,
-                                    labelStyle: Theme.of(context)
-                                        .textTheme
-                                        .labelLarge
-                                        ?.copyWith(fontWeight: FontWeight.bold),
-                                    onPhoneNumberChanged: (value) {
-                                      final rawValue = value.phoneNumber ??
-                                          value.parseNumber() ??
-                                          '';
-                                      _latestPhoneInput = rawValue;
-                                      final normalized =
-                                          normalizeLibyaPhoneNumber(rawValue);
-                                      printLog(
-                                          '[LoginScreen] onPhoneNumberChanged raw=$rawValue normalized=$normalized');
-                                    },
-                                  ),
-                                  const SizedBox(height: 16.0),
-                                  Text(
-                                    S.of(context).password,
-                                    style: Theme.of(context)
-                                        .textTheme
-                                        .labelLarge
-                                        ?.copyWith(fontWeight: FontWeight.bold),
-                                  ),
-                                  const SizedBox(height: 8.0),
-                                  CustomTextField(
-                                    controller: passwordCtrl,
-                                    focusNode: _passwordFocusNode,
-                                    obscureText: true,
-                                    showEyeIcon: true,
-                                    hintText: S.of(context).password,
-                                  ),
-                                  const SizedBox(height: 24.0),
-                                  if (kLoginSetting.isResetPasswordSupported)
-                                    Align(
-                                      alignment: Alignment.centerRight,
-                                      child: TextButton(
-                                        onPressed: isLoading
-                                            ? null
-                                            : () => launchForgetPasswordURL(
-                                                forgetPasswordUrl),
-                                        style: TextButton.styleFrom(
-                                          foregroundColor:
-                                              Theme.of(context).primaryColor,
-                                        ),
-                                        child:
-                                            Text(S.of(context).resetPassword),
-                                      ),
-                                    )
-                                  else
-                                    const SizedBox(height: 20.0),
-                                  StaggerAnimation(
-                                    key: const Key('loginPhoneButton'),
-                                    titleButton: S.of(context).signIn,
-                                    buttonController:
-                                        loginButtonController.view as AnimationController,
-                                    onTap: () => isLoading ? null : _onTapLogin(),
-                                  ),
-                                  const SizedBox(height: 16.0),
-                                  TextButton(
-                                    onPressed:
-                                        isLoading ? null : () => loginWithSMS(context),
+                                const SizedBox(height: 8),
+                                StaggerAnimation(
+                                  key: const Key('loginPhoneButton'),
+                                  titleButton: S.of(context).signIn,
+                                  buttonController: loginButtonController.view
+                                      as AnimationController,
+                                  onTap: () => isLoading ? null : _onTapLogin(),
+                                ),
+                                const SizedBox(height: 10),
+                                Center(
+                                  child: TextButton(
+                                    onPressed: isLoading
+                                        ? null
+                                        : () => loginWithSMS(context),
                                     child: Text(S.of(context).signInWithSMS),
                                   ),
-                                  const SizedBox(height: 24.0),
-                                  if (kLoginSetting.enableRegister)
-                                    Column(
-                                      children: <Widget>[
-                                        Row(
-                                          mainAxisAlignment: MainAxisAlignment.center,
-                                          children: <Widget>[
-                                            Text(S.of(context).dontHaveAccount),
-                                            GestureDetector(
-                                              onTap: () {
-                                                NavigateTools.navigateRegister(context);
-                                              },
-                                              child: Text(
-                                                ' ${S.of(context).signup}',
-                                                style: TextStyle(
-                                                  fontWeight: FontWeight.bold,
-                                                  color:
-                                                      Theme.of(context).primaryColor,
-                                                ),
-                                              ),
-                                            ),
-                                          ],
+                                ),
+                                if (kLoginSetting.enableRegister) ...[
+                                  const SizedBox(height: 8),
+                                  Row(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      Text(S.of(context).dontHaveAccount),
+                                      GestureDetector(
+                                        onTap: () =>
+                                            NavigateTools.navigateRegister(
+                                                context),
+                                        child: Text(
+                                          ' ${S.of(context).signup}',
+                                          style: const TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            color: KatinaAuthStyle.goldDeep,
+                                          ),
                                         ),
-                                      ],
-                                    ),
-                                  const SizedBox(height: 12.0),
+                                      ),
+                                    ],
+                                  ),
                                 ],
-                              ),
+                              ],
                             ),
                           ),
-                        ],
+                        ),
                       ),
                     ),
-                  );
-                },
-              ),
-            ),
+                  ),
+                  const SliverToBoxAdapter(child: SizedBox(height: 28)),
+                ],
+              );
+            },
           ),
         ),
       ),

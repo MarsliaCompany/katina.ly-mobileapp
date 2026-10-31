@@ -96,6 +96,77 @@
       "isRadius": true
     },
     {
+      "key": "katina_services",
+      "layout": "bannerImage",
+      "isSlider": false,
+      "autoPlay": false,
+      "showNumber": false,
+      "design": "default",
+      "showBackGround": false,
+      "radius": 12.0,
+      "enableBackground": false,
+      "title": "خدمات على الطريق",
+      "items": [
+        {
+          "url": "katina-service-forms",
+          "title": "كل الخدمات",
+          "image": "https://katina.ly/wp-content/uploads/2025/08/طلب-مساعدة-على-الطريق.png",
+          "padding": 8.0
+        },
+        {
+          "url": "katina-service-form:15886",
+          "title": "تصليح وميكانيكا",
+          "image": "https://katina.ly/wp-content/uploads/2025/08/صيانة-السيارات-1.png",
+          "padding": 8.0
+        },
+        {
+          "url": "katina-service-form:15892",
+          "title": "سمكرة وطلاء",
+          "image": "https://katina.ly/wp-content/uploads/2025/08/السمكرة-والطلاء.png",
+          "padding": 8.0
+        },
+        {
+          "url": "katina-service-form:15908",
+          "title": "كشف على السيارة",
+          "image": "https://katina.ly/wp-content/uploads/2025/08/كشف-على-السيارة.png",
+          "padding": 8.0
+        },
+        {
+          "url": "katina-service-form:15895",
+          "title": "ساحبة سيارة",
+          "image": "https://katina.ly/wp-content/uploads/2025/08/ساحبة-سيارات.png",
+          "padding": 8.0
+        },
+        {
+          "url": "katina-service-form:15902",
+          "title": "مساعدة على الطريق",
+          "image": "https://katina.ly/wp-content/uploads/2025/08/طلب-مساعدة-على-الطريق.png",
+          "padding": 8.0
+        },
+        {
+          "url": "katina-service-form:15898",
+          "title": "طلب وقود",
+          "image": "https://katina.ly/wp-content/uploads/2025/08/طلب-وقود.png",
+          "padding": 8.0
+        },
+        {
+          "url": "katina-service-form:15906",
+          "title": "شرطي مرور",
+          "image": "https://katina.ly/wp-content/uploads/2025/08/شرطي-مرور.png",
+          "padding": 8.0
+        },
+        {
+          "url": "parts-request-form",
+          "title": "طلب قطعة غيار",
+          "image": "https://katina.ly/wp-content/uploads/2026/09/katina-logo.png",
+          "padding": 8.0
+        }
+      ],
+      "marginLeft": 12.0,
+      "marginRight": 12.0,
+      "isRadius": true
+    },
+    {
       "key": "auto_parts_grid",
       "layout": "category",
       "type": "grid",

@@ -52,6 +52,8 @@ import '../screens/subcategories/models/subcategory_model.dart';
 import '../screens/videos/videos_screen.dart';
 import '../screens/products/filters_screen.dart';
 import '../screens/parts_request/parts_request_form_screen.dart';
+import '../screens/service_forms/service_form_screen.dart';
+import '../screens/service_forms/service_forms_list_screen.dart';
 import '../services/index.dart';
 import '../services/outside/index.dart';
 
@@ -527,6 +529,23 @@ class Routes {
         return _buildRoute(
           settings,
               (_) => const PartsRequestFormScreen(),
+        );
+      case RouteList.serviceForms:
+        return _buildRoute(
+          settings,
+          (_) => const ServiceFormsListScreen(),
+        );
+      case RouteList.serviceForm:
+        final args = settings.arguments;
+        final formId = args is String
+            ? args
+            : (args is Map ? '${args['id'] ?? ''}' : '');
+        if (formId.isEmpty) {
+          return _errorRoute();
+        }
+        return _buildRoute(
+          settings,
+          (_) => ServiceFormScreen(formId: formId),
         );
       case RouteList.postScreen:
         final data = settings.arguments;

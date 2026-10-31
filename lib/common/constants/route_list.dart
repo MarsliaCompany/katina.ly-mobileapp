@@ -195,4 +195,8 @@ class RouteList {
 
   /// Parts Request Form
   static const String partsRequestForm = 'parts-request-form';
+
+  /// Katina service forms (same API as website)
+  static const String serviceForms = 'katina-service-forms';
+  static const String serviceForm = 'katina-service-form';
 }

@@ -236,6 +236,24 @@ class NavigateTools {
           context: context,
         );
       }
+
+      if (url == 'katina-service-forms' || url == RouteList.serviceForms) {
+        return FluxNavigate.pushNamed(
+          RouteList.serviceForms,
+          context: context,
+        );
+      }
+
+      if (url.startsWith('katina-service-form:')) {
+        final formId = url.substring('katina-service-form:'.length).trim();
+        if (formId.isNotEmpty) {
+          return FluxNavigate.pushNamed(
+            RouteList.serviceForm,
+            arguments: formId,
+            context: context,
+          );
+        }
+      }
       
       if (ServerConfig().isWooType || ServerConfig().isWordPress) {
         final cookie =

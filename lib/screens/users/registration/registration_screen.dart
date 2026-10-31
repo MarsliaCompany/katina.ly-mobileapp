@@ -1,9 +1,11 @@
 import 'dart:async';
+import 'dart:convert';
 
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flux_localization/flux_localization.dart';
 import 'package:flux_ui/flux_ui.dart';
+import 'package:http/http.dart' as http;
 import 'package:provider/provider.dart';
 
 import '../../../common/config.dart';
@@ -23,6 +25,7 @@ import '../../../widgets/common/custom_text_field.dart';
 import '../../../widgets/common/phone_number_field_widget.dart';
 import '../../../widgets/common/webview.dart';
 import '../../home/privacy_term_screen.dart';
+import '../katina_auth_style.dart';
 import 'mixins/config_register_mixin.dart';
 import 'registration_screen_web.dart';
 
@@ -152,7 +155,7 @@ class _RegistrationScreenMobileState extends State<RegistrationScreenMobile>
               var routeNames = [RouteList.dashboard, RouteList.productDetail];
               Navigator.popUntil(ctx, (route) {
                 if (routeNames.any((element) =>
-                route.settings.name?.contains(element) ?? false)) {
+                    route.settings.name?.contains(element) ?? false)) {
                   routeFound = true;
                 }
                 return routeFound || route.isFirst;
@@ -213,9 +216,9 @@ class _RegistrationScreenMobileState extends State<RegistrationScreenMobile>
   }
 
   void _showMessage(
-      String text, {
-        bool isError = true,
-      }) {
+    String text, {
+    bool isError = true,
+  }) {
     if (!mounted) {
       return;
     }
@@ -281,6 +284,44 @@ class _RegistrationScreenMobileState extends State<RegistrationScreenMobile>
         }
       }
 
+      // تسجيل التاجر عبر واجهة كاتينة المخصصة
+      if (isVendor == true) {
+        try {
+          final uri = Uri.parse(
+              '${ServerConfig().url}/wp-json/katina/v1/vendor/register');
+          final res = await http.post(
+            uri,
+            headers: {'Content-Type': 'application/json'},
+            body: jsonEncode({
+              'first_name': firstName,
+              'store_name':
+                  '${firstName ?? ''} ${lastName ?? ''}'.trim().isEmpty
+                      ? (username ?? emailAddress)
+                      : '${firstName ?? ''} ${lastName ?? ''}'.trim(),
+              'phone': phoneNumber,
+              'email': emailAddress,
+              'password': password,
+              'description': 'تسجيل عبر تطبيق كاتينة',
+            }),
+          );
+          final body = jsonDecode(res.body);
+          if (res.statusCode >= 200 && res.statusCode < 300) {
+            await _showDialogUnderApproval();
+            if (!mounted) return;
+            NavigateTools.navigateToLogin(context, replacement: true);
+            return;
+          }
+          final msg = (body is Map && body['message'] != null)
+              ? body['message'].toString()
+              : 'تعذر تسجيل التاجر، حاول مرة أخرى.';
+          _showMessage(msg);
+          return;
+        } catch (e) {
+          _showMessage('تعذر الاتصال بخادم التسجيل.');
+          return;
+        }
+      }
+
       await Provider.of<UserModel>(context, listen: false).createUser(
         username: username,
         email: emailAddress,
@@ -308,415 +349,510 @@ class _RegistrationScreenMobileState extends State<RegistrationScreenMobile>
     return ScaffoldMessenger(
       key: _scaffoldMessengerKey,
       child: Scaffold(
-        backgroundColor: theme.colorScheme.surface,
-        appBar: AppBar(
-          backgroundColor: theme.colorScheme.surface,
-          elevation: 0.0,
-        ),
-        body: SafeArea(
-          child: GestureDetector(
-            onTap: () => Tools.hideKeyboard(context),
-            child: ListenableProvider.value(
-              value: Provider.of<UserModel>(context),
-              child: Consumer<UserModel>(
-                builder: (context, value, child) {
-                  return SingleChildScrollView(
-                    child: Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 30.0),
-                      child: AutofillGroup(
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          crossAxisAlignment: CrossAxisAlignment.stretch,
-                          children: <Widget>[
-                            const SizedBox(height: 10.0),
-                            Center(
-                              child: FractionallySizedBox(
-                                widthFactor: 0.8,
-                                child: FluxImage(
-                                  useExtendedImage: false,
-                                  imageUrl: themeConfig.logo,
-                                  fit: BoxFit.contain,
-                                ),
-                              ),
-                            ),
-                            const SizedBox(
-                              height: 30.0,
-                            ),
-                            Text(
-                              S.of(context).createAnAccount,
-                              style: theme.textTheme.headlineSmall,
-                              textAlign: TextAlign.center,
-                            ),
-                            const SizedBox(height: 30.0),
-                            Container(
-                              decoration: BoxDecoration(
-                                color: theme.colorScheme.surfaceContainerLowest,
-                                borderRadius: BorderRadius.circular(16),
-                                border: Border.all(
-                                  color: theme.dividerColor.withValues(alpha: 0.4),
-                                ),
-                              ),
-                              padding: const EdgeInsets.all(16.0),
+        backgroundColor: KatinaAuthStyle.mist,
+        body: GestureDetector(
+          onTap: () => Tools.hideKeyboard(context),
+          child: ListenableProvider.value(
+            value: Provider.of<UserModel>(context),
+            child: Consumer<UserModel>(
+              builder: (context, value, child) {
+                return SingleChildScrollView(
+                  child: Column(
+                    children: [
+                      KatinaAuthStyle.heroHeader(
+                        context: context,
+                        logo: FluxImage(
+                          useExtendedImage: false,
+                          imageUrl: themeConfig.logo,
+                          fit: BoxFit.contain,
+                        ),
+                        title: 'إنشاء حساب في كاتينة',
+                        subtitle:
+                            'سجّل كعميل للتسوق، أو كتاجر لعرض منتجاتك بعد موافقة الإدارة',
+                      ),
+                      Transform.translate(
+                        offset: const Offset(0, -18),
+                        child: Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 18.0),
+                          child: AutofillGroup(
+                            child: Container(
+                              decoration:
+                                  KatinaAuthStyle.cardDecoration(context),
+                              padding:
+                                  const EdgeInsets.fromLTRB(18, 20, 18, 18),
                               child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  _buildLabeledTextField(
-                                    context: context,
-                                    label: S.of(context).firstName,
-                                    focusNode: firstNameNode,
-                                    nextNode: lastNameNode,
-                                    hint: S.of(context).enterYourFirstName,
-                                    onChanged: (value) => firstName = value,
-                                  ),
-                                  const SizedBox(height: 16),
-                                  _buildLabeledTextField(
-                                    context: context,
-                                    label: S.of(context).lastName,
-                                    focusNode: lastNameNode,
-                                    nextNode:
-                                        showPhoneNumberWhenRegister ? phoneNumberNode : emailNode,
-                                    hint: S.of(context).enterYourLastName,
-                                    onChanged: (value) => lastName = value,
-                                  ),
-                                  const SizedBox(height: 16),
-                                  if (showPhoneNumberWhenRegister) ...[
-                                    Text(
-                                      S.of(context).phoneNumber,
-                                      style: theme.textTheme.labelLarge
-                                          ?.copyWith(fontWeight: FontWeight.bold),
-                                    ),
-                                    const SizedBox(height: 8),
-                                    PhoneNumberFieldWidget(
-                                      phoneController: _phoneController,
-                                      labelText: null,
-                                      showFieldLabel: false,
-                                      textInputAction: TextInputAction.next,
-                                      onPhoneNumberChanged: (value) {
-                                        final national = value.parseNumber() ?? '';
-                                        phoneNumber = national;
-                                      },
-                                    ),
-                                    const SizedBox(height: 16),
-                                  ],
-                                  _buildLabeledTextField(
-                                    context: context,
-                                    label: S.of(context).email,
-                                    controller: _emailController,
-                                    focusNode: emailNode,
-                                    nextNode: requireUsernameWhenRegister && isPlatformSupported
-                                        ? usernameNode
-                                        : passwordNode,
-                                    keyboardType: TextInputType.emailAddress,
-                                    hint: S.of(context).enterYourEmailOrUsername,
-                                    onChanged: (value) => emailAddress = value,
-                                  ),
-                                  const SizedBox(height: 16),
-                                  if (requireUsernameWhenRegister && isPlatformSupported) ...[
-                                    _buildLabeledTextField(
-                                      context: context,
-                                      label: S.of(context).username,
-                                      focusNode: usernameNode,
-                                      nextNode: passwordNode,
-                                      hint: S.of(context).enterYourUsername,
-                                      onChanged: (value) => username = value,
-                                    ),
-                                    const SizedBox(height: 16),
-                                  ],
-                                  _buildLabeledTextField(
-                                    context: context,
-                                    label: S.of(context).password,
-                                    focusNode: passwordNode,
-                                    hint: S.of(context).enterYourPassword,
-                                    obscureText: true,
-                                    showEyeIcon: true,
-                                    textInputAction: TextInputAction.done,
-                                    onChanged: (value) => password = value,
-                                  ),
-                                  const SizedBox(height: 20),
-                                  // Checkbox for privacy policy agreement with border
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                crossAxisAlignment: CrossAxisAlignment.stretch,
+                                children: <Widget>[
                                   Container(
                                     decoration: BoxDecoration(
+                                      color: theme
+                                          .colorScheme.surfaceContainerLowest,
+                                      borderRadius: BorderRadius.circular(16),
                                       border: Border.all(
-                                        color: theme.primaryColor,
-                                        width: 2.0,
+                                        color: theme.dividerColor
+                                            .withValues(alpha: 0.4),
                                       ),
-                                      borderRadius: BorderRadius.circular(8.0),
                                     ),
-                                    padding: const EdgeInsets.all(12.0),
-                                    child: Row(
-                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                    padding: const EdgeInsets.all(16.0),
+                                    child: Column(
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
                                       children: [
-                                        Checkbox(
-                                          value: isChecked,
-                                          activeColor: theme.primaryColor,
-                                          checkColor: Colors.white,
-                                          side: BorderSide(
-                                            color: theme.primaryColor,
-                                            width: 2.0,
-                                          ),
-                                          onChanged: (value) {
-                                            setState(() {
-                                              isChecked = value ?? false;
-                                            });
-                                          },
+                                        _buildLabeledTextField(
+                                          context: context,
+                                          label: S.of(context).firstName,
+                                          focusNode: firstNameNode,
+                                          nextNode: lastNameNode,
+                                          hint:
+                                              S.of(context).enterYourFirstName,
+                                          onChanged: (value) =>
+                                              firstName = value,
                                         ),
-                                        Expanded(
-                                          child: RichText(
-                                            maxLines: 3,
-                                            text: TextSpan(
-                                              text: S.of(context).bySignup,
-                                              style: theme.textTheme.bodyLarge,
-                                              children: [
-                                                const WidgetSpan(child: SizedBox(width: 4)),
-                                                TextSpan(
-                                                  text: S.of(context).agreeWithPrivacy,
-                                                  style: TextStyle(
-                                                    color: theme.primaryColor,
-                                                    decoration: TextDecoration.underline,
-                                                    fontWeight: FontWeight.bold,
-                                                  ),
-                                                  recognizer: TapGestureRecognizer()
-                                                    ..onTap = () {
-                                                      final appModel =
-                                                          Provider.of<AppModel>(context, listen: false);
-                                                      final privacyUrl = appModel.appConfig?.settings.privacy ??
-                                                          kAdvanceConfig.privacyPoliciesPageUrl;
-
-                                                      if (privacyUrl != null && privacyUrl.isNotEmpty) {
-                                                        FluxNavigate.push(
-                                                          MaterialPageRoute(
-                                                            builder: (context) => WebView(
-                                                              privacyUrl,
-                                                              title: S.of(context).agreeWithPrivacy,
-                                                            ),
-                                                          ),
-                                                          forceRootNavigator: true,
-                                                          context: context,
-                                                        );
-                                                      } else {
-                                                        FluxNavigate.push(
-                                                          MaterialPageRoute(
-                                                            builder: (context) => const PrivacyTermScreen(
-                                                              showAgreeButton: false,
-                                                            ),
-                                                          ),
-                                                          forceRootNavigator: true,
-                                                          context: context,
-                                                        );
-                                                      }
-                                                    },
+                                        const SizedBox(height: 16),
+                                        _buildLabeledTextField(
+                                          context: context,
+                                          label: S.of(context).lastName,
+                                          focusNode: lastNameNode,
+                                          nextNode: showPhoneNumberWhenRegister
+                                              ? phoneNumberNode
+                                              : emailNode,
+                                          hint: S.of(context).enterYourLastName,
+                                          onChanged: (value) =>
+                                              lastName = value,
+                                        ),
+                                        const SizedBox(height: 16),
+                                        if (showPhoneNumberWhenRegister) ...[
+                                          Text(
+                                            S.of(context).phoneNumber,
+                                            style: theme.textTheme.labelLarge
+                                                ?.copyWith(
+                                                    fontWeight:
+                                                        FontWeight.bold),
+                                          ),
+                                          const SizedBox(height: 8),
+                                          PhoneNumberFieldWidget(
+                                            phoneController: _phoneController,
+                                            labelText: null,
+                                            showFieldLabel: false,
+                                            textInputAction:
+                                                TextInputAction.next,
+                                            onPhoneNumberChanged: (value) {
+                                              final national =
+                                                  value.parseNumber() ?? '';
+                                              phoneNumber = national;
+                                            },
+                                          ),
+                                          const SizedBox(height: 16),
+                                        ],
+                                        _buildLabeledTextField(
+                                          context: context,
+                                          label: S.of(context).email,
+                                          controller: _emailController,
+                                          focusNode: emailNode,
+                                          nextNode:
+                                              requireUsernameWhenRegister &&
+                                                      isPlatformSupported
+                                                  ? usernameNode
+                                                  : passwordNode,
+                                          keyboardType:
+                                              TextInputType.emailAddress,
+                                          hint: S
+                                              .of(context)
+                                              .enterYourEmailOrUsername,
+                                          onChanged: (value) =>
+                                              emailAddress = value,
+                                        ),
+                                        const SizedBox(height: 16),
+                                        if (requireUsernameWhenRegister &&
+                                            isPlatformSupported) ...[
+                                          _buildLabeledTextField(
+                                            context: context,
+                                            label: S.of(context).username,
+                                            focusNode: usernameNode,
+                                            nextNode: passwordNode,
+                                            hint:
+                                                S.of(context).enterYourUsername,
+                                            onChanged: (value) =>
+                                                username = value,
+                                          ),
+                                          const SizedBox(height: 16),
+                                        ],
+                                        _buildLabeledTextField(
+                                          context: context,
+                                          label: S.of(context).password,
+                                          focusNode: passwordNode,
+                                          hint: S.of(context).enterYourPassword,
+                                          obscureText: true,
+                                          showEyeIcon: true,
+                                          textInputAction: TextInputAction.done,
+                                          onChanged: (value) =>
+                                              password = value,
+                                        ),
+                                        const SizedBox(height: 20),
+                                        // Checkbox for privacy policy agreement with border
+                                        Container(
+                                          decoration: BoxDecoration(
+                                            border: Border.all(
+                                              color: theme.primaryColor,
+                                              width: 2.0,
+                                            ),
+                                            borderRadius:
+                                                BorderRadius.circular(8.0),
+                                          ),
+                                          padding: const EdgeInsets.all(12.0),
+                                          child: Row(
+                                            crossAxisAlignment:
+                                                CrossAxisAlignment.start,
+                                            children: [
+                                              Checkbox(
+                                                value: isChecked,
+                                                activeColor: theme.primaryColor,
+                                                checkColor: Colors.white,
+                                                side: BorderSide(
+                                                  color: theme.primaryColor,
+                                                  width: 2.0,
                                                 ),
-                                              ],
+                                                onChanged: (value) {
+                                                  setState(() {
+                                                    isChecked = value ?? false;
+                                                  });
+                                                },
+                                              ),
+                                              Expanded(
+                                                child: RichText(
+                                                  maxLines: 3,
+                                                  text: TextSpan(
+                                                    text:
+                                                        S.of(context).bySignup,
+                                                    style: theme
+                                                        .textTheme.bodyLarge,
+                                                    children: [
+                                                      const WidgetSpan(
+                                                          child: SizedBox(
+                                                              width: 4)),
+                                                      TextSpan(
+                                                        text: S
+                                                            .of(context)
+                                                            .agreeWithPrivacy,
+                                                        style: TextStyle(
+                                                          color: theme
+                                                              .primaryColor,
+                                                          decoration:
+                                                              TextDecoration
+                                                                  .underline,
+                                                          fontWeight:
+                                                              FontWeight.bold,
+                                                        ),
+                                                        recognizer:
+                                                            TapGestureRecognizer()
+                                                              ..onTap = () {
+                                                                final appModel =
+                                                                    Provider.of<
+                                                                            AppModel>(
+                                                                        context,
+                                                                        listen:
+                                                                            false);
+                                                                final privacyUrl = appModel
+                                                                        .appConfig
+                                                                        ?.settings
+                                                                        .privacy ??
+                                                                    kAdvanceConfig
+                                                                        .privacyPoliciesPageUrl;
+
+                                                                if (privacyUrl !=
+                                                                        null &&
+                                                                    privacyUrl
+                                                                        .isNotEmpty) {
+                                                                  FluxNavigate
+                                                                      .push(
+                                                                    MaterialPageRoute(
+                                                                      builder:
+                                                                          (context) =>
+                                                                              WebView(
+                                                                        privacyUrl,
+                                                                        title: S
+                                                                            .of(context)
+                                                                            .agreeWithPrivacy,
+                                                                      ),
+                                                                    ),
+                                                                    forceRootNavigator:
+                                                                        true,
+                                                                    context:
+                                                                        context,
+                                                                  );
+                                                                } else {
+                                                                  FluxNavigate
+                                                                      .push(
+                                                                    MaterialPageRoute(
+                                                                      builder:
+                                                                          (context) =>
+                                                                              const PrivacyTermScreen(
+                                                                        showAgreeButton:
+                                                                            false,
+                                                                      ),
+                                                                    ),
+                                                                    forceRootNavigator:
+                                                                        true,
+                                                                    context:
+                                                                        context,
+                                                                  );
+                                                                }
+                                                              },
+                                                      ),
+                                                    ],
+                                                  ),
+                                                ),
+                                              ),
+                                            ],
+                                          ),
+                                        ),
+                                        const SizedBox(height: 20),
+                                        Row(
+                                          children: [
+                                            Checkbox(
+                                              value: _registerTypeSelected ==
+                                                  RegisterType.vendor,
+                                              onChanged: (value) {
+                                                setState(() {
+                                                  _registerTypeSelected =
+                                                      value == true
+                                                          ? RegisterType.vendor
+                                                          : RegisterType
+                                                              .customer;
+                                                });
+                                              },
+                                            ),
+                                            Expanded(
+                                              child: Text(
+                                                S.of(context).registerAsVendor,
+                                                style:
+                                                    theme.textTheme.bodyMedium,
+                                              ),
+                                            ),
+                                          ],
+                                        ),
+                                        const SizedBox(height: 12),
+                                        SizedBox(
+                                          width: double.infinity,
+                                          child: ElevatedButton(
+                                            style: ElevatedButton.styleFrom(
+                                              backgroundColor:
+                                                  theme.colorScheme.primary,
+                                              foregroundColor:
+                                                  theme.colorScheme.onPrimary,
+                                              padding:
+                                                  const EdgeInsets.symmetric(
+                                                vertical: 14,
+                                              ),
+                                            ),
+                                            onPressed: value.loading == true
+                                                ? null
+                                                : () {
+                                                    _submitRegister(
+                                                      firstName: firstName,
+                                                      lastName: lastName,
+                                                      phoneNumber:
+                                                          phoneNumber ??
+                                                              _phoneController
+                                                                  .text
+                                                                  .trim(),
+                                                      emailAddress:
+                                                          emailAddress,
+                                                      username: username,
+                                                      password: password,
+                                                      isVendor:
+                                                          _isSelectedVendorType,
+                                                      isDelivery:
+                                                          _isSelectedDeliveryType,
+                                                      isOwner:
+                                                          _isSelectedOwnerType,
+                                                    );
+                                                  },
+                                            child: Text(
+                                              value.loading == true
+                                                  ? S.of(context).loading
+                                                  : S
+                                                      .of(context)
+                                                      .createAnAccount,
                                             ),
                                           ),
                                         ),
                                       ],
                                     ),
                                   ),
-                                  const SizedBox(height: 20),
+                                  const SizedBox(height: 24),
                                   Row(
                                     children: [
-                                      Checkbox(
-                                        value: _registerTypeSelected ==
-                                            RegisterType.vendor,
-                                        onChanged: (value) {
-                                          setState(() {
-                                            _registerTypeSelected =
-                                                value == true
-                                                    ? RegisterType.vendor
-                                                    : RegisterType.customer;
-                                          });
-                                        },
+                                      Expanded(
+                                          child: Divider(
+                                              color: theme.dividerColor)),
+                                      Padding(
+                                        padding: const EdgeInsets.symmetric(
+                                            horizontal: 12.0),
+                                        child: Text(S.of(context).or),
                                       ),
                                       Expanded(
-                                        child: Text(
-                                          S.of(context).registerAsVendor,
-                                          style: theme.textTheme.bodyMedium,
-                                        ),
-                                      ),
+                                          child: Divider(
+                                              color: theme.dividerColor)),
                                     ],
                                   ),
-                                  const SizedBox(height: 12),
-                                  SizedBox(
-                                    width: double.infinity,
-                                    child: ElevatedButton(
-                                      style: ElevatedButton.styleFrom(
-                                        backgroundColor: theme.colorScheme.primary,
-                                        foregroundColor: theme.colorScheme.onPrimary,
-                                        padding: const EdgeInsets.symmetric(
-                                          vertical: 14,
-                                        ),
-                                      ),
-                                      onPressed: value.loading == true
-                                          ? null
-                                          : () {
-                                              _submitRegister(
-                                                firstName: firstName,
-                                                lastName: lastName,
-                                                phoneNumber: phoneNumber ??
-                                                    _phoneController.text.trim(),
-                                                emailAddress: emailAddress,
-                                                username: username,
-                                                password: password,
-                                                isVendor: _isSelectedVendorType,
-                                                isDelivery:
-                                                    _isSelectedDeliveryType,
-                                                isOwner: _isSelectedOwnerType,
-                                              );
-                                            },
-                                      child: Text(
-                                        value.loading == true
-                                            ? S.of(context).loading
-                                            : S.of(context).createAnAccount,
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                            const SizedBox(height: 24),
-                            Row(
-                              children: [
-                                Expanded(child: Divider(color: theme.dividerColor)),
-                                Padding(
-                                  padding: const EdgeInsets.symmetric(horizontal: 12.0),
-                                  child: Text(S.of(context).or),
-                                ),
-                                Expanded(child: Divider(color: theme.dividerColor)),
-                              ],
-                            ),
-                            const SizedBox(height: 16),
-                            // Redirect to SMS Login for registration
-                            Padding(
-                              padding: const EdgeInsets.symmetric(vertical: 16.0),
-                              child: SizedBox(
-                                width: double.infinity,
-                                child: ElevatedButton(
-                                  key: const Key('registerSMSButton'),
-                                  style: ElevatedButton.styleFrom(
-                                    backgroundColor: theme.colorScheme.primary,
-                                    foregroundColor: theme.colorScheme.onPrimary,
+                                  const SizedBox(height: 16),
+                                  // Redirect to SMS Login for registration
+                                  Padding(
                                     padding: const EdgeInsets.symmetric(
-                                      vertical: 14,
+                                        vertical: 16.0),
+                                    child: SizedBox(
+                                      width: double.infinity,
+                                      child: ElevatedButton(
+                                        key: const Key('registerSMSButton'),
+                                        style: ElevatedButton.styleFrom(
+                                          backgroundColor:
+                                              theme.colorScheme.primary,
+                                          foregroundColor:
+                                              theme.colorScheme.onPrimary,
+                                          padding: const EdgeInsets.symmetric(
+                                            vertical: 14,
+                                          ),
+                                        ),
+                                        onPressed: (value.loading == true ||
+                                                !isChecked)
+                                            ? null
+                                            : () async {
+                                                if (!isChecked) {
+                                                  _showMessage(S
+                                                      .of(context)
+                                                      .pleaseAgreeTerms);
+                                                  return;
+                                                }
+                                                if (kAdvanceConfig
+                                                    .enableNewSMSLogin) {
+                                                  final model =
+                                                      Provider.of<UserModel>(
+                                                          context,
+                                                          listen: false);
+                                                  Navigator.push(
+                                                    context,
+                                                    MaterialPageRoute(
+                                                      builder: (_) =>
+                                                          SMSLoginScreen(
+                                                        onSuccess:
+                                                            (user) async {
+                                                          await model
+                                                              .setUser(user);
+                                                          Navigator.of(context)
+                                                              .pop();
+                                                          _onRegisterSuccess(
+                                                              user);
+                                                        },
+                                                      ),
+                                                    ),
+                                                  );
+                                                } else {
+                                                  Navigator.pushNamed(context,
+                                                      RouteList.loginSMS);
+                                                }
+                                              },
+                                        child: Text(
+                                          S.of(context).signInWithSMS,
+                                          style: theme.textTheme.titleMedium
+                                              ?.copyWith(
+                                            color: theme.colorScheme.onPrimary,
+                                            fontWeight: FontWeight.bold,
+                                          ),
+                                        ),
+                                      ),
                                     ),
                                   ),
-                                  onPressed: (value.loading == true || !isChecked)
-                                      ? null
-                                      : () async {
-                                          if (!isChecked) {
-                                            _showMessage(S.of(context).pleaseAgreeTerms);
-                                            return;
-                                          }
-                                          if (kAdvanceConfig.enableNewSMSLogin) {
-                                            final model = Provider.of<UserModel>(context, listen: false);
-                                            Navigator.push(
-                                              context,
-                                              MaterialPageRoute(
-                                                builder: (_) => SMSLoginScreen(
-                                                  onSuccess: (user) async {
-                                                    await model.setUser(user);
-                                                    Navigator.of(context).pop();
-                                                    _onRegisterSuccess(user);
-                                                  },
-                                                ),
-                                              ),
-                                            );
-                                          } else {
-                                            Navigator.pushNamed(context, RouteList.loginSMS);
-                                          }
+                                  const SizedBox(height: 10.0),
+                                  if (isShowRegisterOptions)
+                                    Padding(
+                                      padding:
+                                          const EdgeInsets.only(bottom: 10),
+                                      child: RadioGroup<RegisterType>(
+                                        groupValue: _registerTypeSelected,
+                                        onChanged: (RegisterType? value) {
+                                          setState(() {
+                                            _registerTypeSelected = value;
+                                          });
                                         },
-                                  child: Text(
-                                    S.of(context).signInWithSMS,
-                                    style: theme.textTheme.titleMedium?.copyWith(
-                                      color: theme.colorScheme.onPrimary,
-                                      fontWeight: FontWeight.bold,
+                                        child: Column(
+                                          crossAxisAlignment:
+                                              CrossAxisAlignment.start,
+                                          children: [
+                                            Text(
+                                              '${S.of(context).registerAs}:',
+                                              style: theme.textTheme.labelLarge,
+                                            ),
+                                            _buildRegisterType(
+                                              RegisterType.customer,
+                                              S.of(context).customer,
+                                            ),
+                                            if (isVendorRegister)
+                                              _buildRegisterType(
+                                                RegisterType.vendor,
+                                                S.of(context).vendor,
+                                              ),
+                                            if (isOwnerRegister)
+                                              _buildRegisterType(
+                                                RegisterType.owner,
+                                                S.of(context).owner,
+                                              ),
+                                            if (isDeliveryRegister)
+                                              _buildRegisterType(
+                                                RegisterType.delivery,
+                                                S.of(context).deliveryBoy,
+                                              ),
+                                          ],
+                                        ),
+                                      ),
                                     ),
-                                  ),
-                                ),
-                              ),
-                            ),
-                            const SizedBox(height: 10.0),
-                            if (isShowRegisterOptions)
-                              Padding(
-                                padding: const EdgeInsets.only(bottom: 10),
-                                child: RadioGroup<RegisterType>(
-                                  groupValue: _registerTypeSelected,
-                                  onChanged: (RegisterType? value) {
-                                    setState(() {
-                                      _registerTypeSelected = value;
-                                    });
-                                  },
-                                  child: Column(
-                                    crossAxisAlignment:
-                                    CrossAxisAlignment.start,
-                                    children: [
-                                      Text(
-                                        '${S.of(context).registerAs}:',
-                                        style: theme.textTheme.labelLarge,
-                                      ),
-                                      _buildRegisterType(
-                                        RegisterType.customer,
-                                        S.of(context).customer,
-                                      ),
-                                      if (isVendorRegister)
-                                        _buildRegisterType(
-                                          RegisterType.vendor,
-                                          S.of(context).vendor,
+                                  const SizedBox(height: 20.0),
+                                  Padding(
+                                    padding: const EdgeInsets.symmetric(
+                                        vertical: 10.0),
+                                    child: Row(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.center,
+                                      children: <Widget>[
+                                        Text(
+                                          '${S.of(context).or} ',
                                         ),
-                                      if (isOwnerRegister)
-                                        _buildRegisterType(
-                                          RegisterType.owner,
-                                          S.of(context).owner,
+                                        InkWell(
+                                          onTap: () {
+                                            final canPop =
+                                                ModalRoute.of(context)!.canPop;
+                                            if (canPop) {
+                                              Navigator.pop(context);
+                                            } else {
+                                              NavigateTools.navigateToLogin(
+                                                  context,
+                                                  replacement: true);
+                                            }
+                                          },
+                                          child: Text(
+                                            S.of(context).loginToYourAccount,
+                                            style: TextStyle(
+                                              color: theme.primaryColor,
+                                              decoration:
+                                                  TextDecoration.underline,
+                                              fontSize: 15,
+                                            ),
+                                          ),
                                         ),
-                                      if (isDeliveryRegister)
-                                        _buildRegisterType(
-                                          RegisterType.delivery,
-                                          S.of(context).deliveryBoy,
-                                        ),
-                                    ],
-                                  ),
-                                ),
-                              ),
-                            const SizedBox(height: 20.0),
-                            Padding(
-                              padding:
-                              const EdgeInsets.symmetric(vertical: 10.0),
-                              child: Row(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: <Widget>[
-                                  Text(
-                                    '${S.of(context).or} ',
-                                  ),
-                                  InkWell(
-                                    onTap: () {
-                                      final canPop =
-                                          ModalRoute.of(context)!.canPop;
-                                      if (canPop) {
-                                        Navigator.pop(context);
-                                      } else {
-                                        NavigateTools.navigateToLogin(context,
-                                            replacement: true);
-                                      }
-                                    },
-                                    child: Text(
-                                      S.of(context).loginToYourAccount,
-                                      style: TextStyle(
-                                        color: theme.primaryColor,
-                                        decoration: TextDecoration.underline,
-                                        fontSize: 15,
-                                      ),
+                                      ],
                                     ),
                                   ),
                                 ],
                               ),
                             ),
-                          ],
+                          ),
                         ),
                       ),
-                    ),
-                  );
-                },
-              ),
+                    ],
+                  ),
+                );
+              },
             ),
           ),
         ),

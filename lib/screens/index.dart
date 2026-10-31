@@ -44,3 +44,5 @@ export 'users/login/login_screen.dart';
 export 'users/registration/registration_screen.dart';
 export 'wishlist/product_wishlist_screen.dart';
 export 'parts_request/parts_request_form_screen.dart';
+export 'service_forms/service_form_screen.dart';
+export 'service_forms/service_forms_list_screen.dart';
